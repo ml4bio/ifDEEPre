@@ -1,0 +1,22 @@
+The 12th sequence: MAENNVPEPFRITLTSGRFMVYDVQTIAHIQREHGIDGASQALEQYNPLELRSEDAALLVNKGAAHIVNDDSSKPPKSPQNAPRSPNGMPKIATASDNTQDNWNDIPEDMFASRGRSNKAKKPRARLGVSPVSSTAPGSRTASAAGLHTGPPPLRSTASQPFLRPPPPPSRPTYS 
+The first digit result:
+Predicted digit:
+0
+Candiate digits:
+0	1	2	3	4	5	6
+Probability:
+0.9974547	8.6402055e-05	0.001068132	0.0013465541	2.6260675e-05	1.6933205e-05	9.119829e-07
+The second digit result:
+Predicted digit:
+0
+Candidate digits:
+0
+Probability:
+0.0
+The third digit result:
+Predicted digit:
+0
+Candidate digits:
+0
+Probability:
+0.0
