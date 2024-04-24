@@ -1,0 +1,85 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/29.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       29  [L=598]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+     5e-100  334.2   3.7   7.2e-100  333.7   3.7    1.2  1  Dak1      Dak1 domain
+      1e-47  162.1   1.7    2.5e-47  160.9   1.7    1.7  1  Dak2      DAK2 domain
+
+
+Domain annotation for each model (and alignments):
+>> Dak1  Dak1 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  333.7   3.7  8.9e-104  7.2e-100       2     304 ..      28     354 ..      27     357 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 333.7 bits;  conditional E-value: 8.9e-104
+           HHHHH-TTEEEETTTTEEEETT-S...-TTS-EEEEEEEESSTTTTGGGBSBTSBSEEEEEEETS---HHHHHHHH.HHH--SS-EEEEEESSHHHHHHHHHHHH CS
+  Dak1   2 Glvaanpelelleeekvvvrkkek...kkgkValisgGGSGHePahagfVGkGmldaavaGevFaSPsadqilaai.kavdsgkGvllivkNYtGDvlnfglAae 102
+           +++ anp+++l++e+k+++r+ ++   k+++V+++sgGG+GHeP +a fVG G+l++a++G++FaSPsa+qi +++   vds kG+l+iv+NYtGDvlnfg+ +e
+    29  28 SITLANPSVALDAENKIIFRRGDAglyKQSQVSVVSGGGAGHEPSFAAFVGPGILSGAISGTIFASPSAEQIRRCLlGRVDSAKGILVIVMNYTGDVLNFGMGVE 132
+           67899****************5555899**********************************************9725789************************ PP
+
+           HHHHTT--EEEEEE--B-SSS.SSTTCSSSB--THHHHHHHHHHHHHHHT--HHHHHHHHHHHHTTEEEEEEEEE--B-TTTSSBSS-...--TTEEEETE-TTS CS
+  Dak1 103 kakaegikvetvvvdDDvave.dseekagrRGvagtvlveKiaGaaaeegasLeevaelaekvaenlrsigvalsactvpgagkpsfe...leedemelGvGiHg 203
+           ka+a+g+++e++vv+DD  v  +++ k+grRG+agtvlv KiaGa+a++ga L++v+++a+ +++n++sig +ls+++vpg++ ++     l+ +e+e+G+GiH+
+    29 133 KARATGVDIEMLVVGDDAGVPrSKGGKVGRRGIAGTVLVQKIAGALAATGAPLKDVHRVAKLASDNIVSIGSSLSHVHVPGRKVTEAGedeLTFEEVEIGMGIHN 237
+           ********************9899*********************************************************98665423349999********** PP
+
+           ---SEEEE---HHHHHHHHHHHHHH............TT-EEEEEEEE-BSS-HHHHHHHHHHHHHHHHHT.T-EEEEEEEESSS--TTBEEEEEEEEEE-.... CS
+  Dak1 204 EpGvereklksadelveelleklled...........kgdevvllvnglGgtsllelyivaeevaelleek.gikvvrvlvGeyvTsldmaGfsitllkld.... 292
+           E+G er+k +   +lve++l ++l++           ++d +v+l+n+lGg+s le+  +a+ev ++l++  +i++vrvlvG+++Tsl++ Gfsi+llkl+    
+    29 238 EAGSERTKADL-PDLVEQMLAHMLDEedkergflkvsSEDGTVVLINNLGGVSVLEMGGIATEVLDQLKKYhNIRPVRVLVGTFMTSLNGIGFSISLLKLQdtgl 341
+           ********876.89**********854566666666559******************************988****************************76899 PP
+
+           .HHHHHHHHS-EE CS
+  Dak1 293 .dellelldapve 304
+            +++l+lldap e
+    29 342 dKSMLQLLDAPSE 354
+           8999*****9987 PP
+
+>> Dak2  DAK2 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.9   1.7     3e-51   2.5e-47       2     173 ..     424     596 ..     423     597 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 160.9 bits;  conditional E-value: 3e-51
+           TS-S-HHHHHHHHHHHHHHHHHC-.--SSHHHHHHHHHHHHHHH--STHHHHHHHHHHHHHHHC...........TT---HHHHHHHHHHHHHHHH---TTSSST CS
+  Dak2   2 vGDGDtGtnmargaeavlkaleel.eeaslaevlkalakallsgagGtsGvlysqflralakal......kekeeldaedlaaalkaaleaiqavgkakpgdkTm 99 
+           vGDGD+G++++rgae+vl+ + ++ +++++  +++++ +++++++ GtsG++y++fl+ala+ l      ++k+e++++ +a+a+k+ale++ ++++a+pgd+T+
+    29 424 VGDGDCGIGLKRGAESVLQLIASDlDTQDAVIFMDRIISTIETSMDGTSGAIYAIFLNALAAGLrsqspeSGKKEVTTQVWAEAAKQALEGLGKYTPARPGDRTL 528
+           9***************************************************************88887556788****************************** PP
+
+           HHHHHHHHHHHHT...........T---HHHHHHHHHHCCS---SSGGGGGGGGGT.TS--HHHHHHHHHHHHHH CS
+  Dak2 100 lDvlrpavealekakdgedlkealeaaakaaekgaeaTkellaklgrAsylgersl.gvvDpGAvglalileala 173
+           +D+l+p++++l ++ d       l++aa+aa++g +aTk ++a lgr+ y+g++ + +v+DpGA+gl+ +l++la
+    29 529 VDALEPFIKQLVATGD-------LKKAAQAAKEGTDATKGMKASLGRSVYVGNEGFkEVPDPGAYGLSEFLTGLA 596
+           ****************.......*********************************88**************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (598 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       381  (0.0233656); expected 326.1 (0.02)
+Passed bias filter:                      332  (0.0203606); expected 326.1 (0.02)
+Passed Vit filter:                        22  (0.0013492); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.76u 0.19s 00:00:00.95 Elapsed: 00:00:00.39
+# Mc/sec: 4298.74
+//
+[ok]

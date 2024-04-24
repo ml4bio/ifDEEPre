@@ -1,0 +1,121 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/27.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       27  [L=424]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    6.7e-35  120.1   0.0    6.3e-34  116.9   0.0    2.2  2  Fapy_DNA_glyco  Formamidopyrimidine-DNA glycosylase N-termina
+    5.2e-24   83.9   0.0    1.2e-23   82.8   0.0    1.6  1  H2TH            Formamidopyrimidine-DNA glycosylase H2TH doma
+  ------ inclusion threshold ------
+       0.12   12.0   0.0       0.22   11.1   0.0    1.3  1  Pertussis_S1    Pertussis toxin, subunit 1
+       0.49    9.0   5.4       0.57    8.8   5.4    1.2  1  SAPS            SIT4 phosphatase-associated protein
+       0.52    9.1   6.9       0.71    8.7   6.9    1.1  1  SLC12           Solute carrier family 12
+
+
+Domain annotation for each model (and alignments):
+>> Fapy_DNA_glyco  Formamidopyrimidine-DNA glycosylase N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.9   0.0   1.9e-37   6.3e-34       1     115 []       1     136 [.       1     136 [. 0.95
+   2 ?    0.3   0.0       0.3   9.7e+02      68      83 ..     270     320 ..     249     363 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 116.9 bits;  conditional E-value: 1.9e-37
+                     X--HHHHHHHHHHHHHHHTT-EEEEEEE-SSHHHTS-....HHHHHTT-.SEEEEEEEEETTEEEEEE..EEEEEEE-TTTEEESS......... CS
+  Fapy_DNA_glyco   1 MPElpEVetvrrglrrhllgkkiakvevlkdktlrgs....peafakalkgrkitsvgrrGKyllleldggevlvvhlgmtGrlli......... 82 
+                     MPE+ EV++++++lr+h+ +k i++v+v++d+ + g+    ++af+ka++g++i +++++GKy++le+d+ ++ v+hlgmtG++++         
+              27   1 MPEIGEVARIVHFLRKHCANKVISAVQVQEDNIIYGKvgttASAFQKAMTGKRILDAKQQGKYFWLEMDSAPHPVMHLGMTGWIKFktddtshyy 95 
+                     ****************************8888888844456999*****************************************99******** PP
+
+                     ..............TTEEEEEEEG.GGEEEEEEETT---EE CS
+  Fapy_DNA_glyco  83 .......eeeeeppkhtkvrleld.dgtelaFvDpRrfGrv 115
+                            + +e+pp+++k+ l+l+ +++e+aFvDpRr++r+
+              27  96 rkpededKPQEWPPRFWKFILQLQgEENEIAFVDPRRLARI 136
+                     ******9999**************999***********986 PP
+
+  == domain 2  score: 0.3 bits;  conditional E-value: 0.3
+                     EEEEEE-TTTEEESS.................................... CS
+  Fapy_DNA_glyco  68 evlvvhlgmtGrlli...................................e 83 
+                     ++ +vhl++ Gr                                      +
+              27 270 GDKIVHLKVGGRTSAivprlqkktgkvagdvgsademeedaaesqeeaapK 320
+                     556789999999855578888888888888888888887777754432220 PP
+
+>> H2TH  Formamidopyrimidine-DNA glycosylase H2TH domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.8   0.0   3.6e-27   1.2e-23       2      90 ..     156     246 ..     155     248 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 82.8 bits;  conditional E-value: 3.6e-27
+           --BTT..STTS-HHHHHHHHHT--SBHHHHHHCTTTSCS--HHHHHHHHHHTT--TTSBGGGS-HHHHHHHHHHHHHHHHHHHHTTTTGCC CS
+  H2TH   2 gpdpl..seeftvdelaellakkkkpikslLLDqtlvaGvGNiyadEvLFrakihPerlasslskkelellheeikevlkeaievgeeavr 90 
+           gpdp   +e  t + l+e+l++kk pik+lLLDq +++G+GN++adEvL++a+ihPe+ + + s  + ++lh+++ ev   a+ev  ++++
+    27 156 GPDPVidREILTEQWLEEKLKSKKVPIKALLLDQANISGIGNWVADEVLYQARIHPEQYSYTFSSAQTAALHKAMMEVCGLAVEVLSDSSQ 246
+           789887678888999*********************************************************************9877765 PP
+
+>> Pertussis_S1  Pertussis toxin, subunit 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   6.8e-05      0.22     166     210 ..     203     247 ..     184     254 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 6.8e-05
+                   E-EEEEEECCEE-TT---SS--SBECETTTTCCCCCCCCCE--SE CS
+  Pertussis_S1 166 vvettrinPemytsrrsvlsivatdvrmlPviGiatavqleisea 210
+                   v  ++ri Pe y+  +s +++ a  + m+ v G+a+ v  ++s+ 
+            27 203 VLYQARIHPEQYSYTFSSAQTAALHKAMMEVCGLAVEVLSDSSQF 247
+                   7889*********************************99999985 PP
+
+>> SAPS  SIT4 phosphatase-associated protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   5.4   0.00017      0.57     263     341 ..     306     383 ..     153     407 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.00017
+  SAPS 263 seeealedvs.deaskeesaesedltdkdedvsleesksakdenkesdesesdtaeesseededdasseesalaeeteek 341
+            ee+a e ++  +++k++s++++ +t+ +++v++ee+k +++ +++++++++d++e +s ++  ++++ +++++ +t+ +
+    27 306 MEEDAAESQEeAAPKKPKSKAKKATTKVKQEVDEEETKPKRARTTKRKAETEDEDESASVKS--EDEHTKPVKKRQTKTA 383
+           22333333333334445555555555566666666666666633333332222222222222..2222222222222222 PP
+
+>> SLC12  Solute carrier family 12
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.7   6.9   0.00022      0.71      80     230 ..     249     401 ..     216     411 .. 0.50
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 0.00022
+  SLC12  80 nilllGyksdWqtcekeeleeYfnvihdafdlklavaiLrlkegldvs.ellqeeeeeeeekeakeaeeseak...eseeekkekleekdsnlslseekkeeek 179
+            ++ l+ y+ d  +++k+ l +  +++h +   + + ++ rl+++       + +++e ee ++a+++ee++ k   ++ ++ ++k++++ ++++++++  +++k
+     27 249 ETWLMKYRWDKGKKDKNVLPNGDKIVHLKVGGRTSAIVPRLQKKTGKVaGDVGSADEMEE-DAAESQEEAAPKkpkSKAKKATTKVKQEVDEEETKPKRARTTK 351
+            555666655555666677777777788888888888888877766544222222222222.2222222222222212222222233333333333333332333 PP
+
+  SLC12 180 ekkkekkkkkekkeklkkkekslllkeaskeekevleeitqfqkkqkkgti 230
+            +k+++++++++++ k++ +e+++ +k++++++++ ++ ++  q k kk+ +
+     27 352 RKAETEDEDESASVKSE-DEHTKPVKKRQTKTATKTNGTKATQAKPKKKDV 401
+            33333333333333222.223333333333334444555555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (424 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                      2334  (0.143137); expected 326.1 (0.02)
+Passed bias filter:                      758  (0.046486); expected 326.1 (0.02)
+Passed Vit filter:                       187  (0.0114682); expected 16.3 (0.001)
+Passed Fwd filter:                        31  (0.00190114); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 1.21u 0.24s 00:00:01.45 Elapsed: 00:00:00.65
+# Mc/sec: 1856.06
+//
+[ok]

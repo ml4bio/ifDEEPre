@@ -1,0 +1,83 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/3.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       3  [L=747]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      9e-06   25.9   0.0    3.1e-05   24.2   0.0    1.9  2  BRCT           BRCA1 C Terminus (BRCT) domain
+     0.0011   18.6   0.0     0.0026   17.5   0.0    1.6  1  RTT107_BRCT_5  Regulator of Ty1 transposition protein 107 BRC
+  ------ inclusion threshold ------
+       0.03   14.6   0.0      0.077   13.3   0.0    1.7  1  BRCT_2         BRCT domain, a BRCA1 C-terminus domain
+
+
+Domain annotation for each model (and alignments):
+>> BRCT  BRCA1 C Terminus (BRCT) domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.0   5.7e-09   3.1e-05      14      78 ..     530     594 ..     527     595 .. 0.90
+   2 ?   -3.2   0.0       1.9   1.1e+04       4      14 ..     621     632 ..     619     640 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 5.7e-09
+           EESTSSHHHHHHHHHHHHTTCEEESSCSTTSSEEEESSSHSHHHHHHHHHHTTSEEEETHHHHHH CS
+  BRCT  14 tgvldnftrdeleelikehGGkvttevskktthlvvgepesrslkyleaiklnipivheewlldc 78 
+           +++ + ++r  l +++k+hG++ t+++++ + ++v g   +++ k+l+++ l+++iv+ +w+ ++
+     3 530 YSNTKVYERAMLMKFMKSHGATRTEDIKSANFLCVGGGELLKTPKLLHSLTLGKTIVTDDWVSQS 594
+           66788899999************************66666**********************987 PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 1.9
+           TTTTTEEEEE.E CS
+  BRCT   4 llfhgckfvi.t 14 
+            +f+++++++ +
+     3 621 GIFTDQVIYVsP 632
+           58*******932 PP
+
+>> RTT107_BRCT_5  Regulator of Ty1 transposition protein 107 BRCT domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.0   4.7e-07    0.0026      40      98 ..     546     606 ..     530     608 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 4.7e-07
+                    HHTTEEE-SGCCT-SEEE-..SS---SHHHHHHCCCTTEEE-CHHHHHHHHHTS---SGGG CS
+  RTT107_BRCT_5  40 rklGikivqeakkcntliA..pkilRTeKFLksLskapkilspdfiedvLkkkklldleey 98 
+                    ++ G + +++ k+ n l+    ++l+T K L sL  +++i++ d++++ ++ ++lld++e+
+              3 546 KSHGATRTEDIKSANFLCVggGELLKTPKLLHSLTLGKTIVTDDWVSQSVTAGRLLDTDEF 606
+                    556666667777777776522589********************************99998 PP
+
+>> BRCT_2  BRCT domain, a BRCA1 C-terminus domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.0   1.4e-05     0.077      17      84 ..     534     606 ..     527     607 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 1.4e-05
+  BRCT_2  17 pspsreklkklIeknGGevvetitsavyiviaesneee.....laekrkrrvvspkyIkdCikkgkllpleny 84 
+             + ++r+ l k  +++G + +e+i+sa+++++   +  +     ++ + ++ +v+ +++  ++ +g+ll+ +++
+       3 534 KVYERAMLMKFMKSHGATRTEDIKSANFLCVGGGELLKtpkllHSLTLGKTIVTDDWVSQSVTAGRLLDTDEF 606
+             34899999***************9999998888876668999999999*********************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (747 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       758  (0.046486); expected 326.1 (0.02)
+Passed bias filter:                      331  (0.0202993); expected 326.1 (0.02)
+Passed Vit filter:                        24  (0.00147185); expected 16.3 (0.001)
+Passed Fwd filter:                         8  (0.000490617); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 1.05u 0.19s 00:00:01.24 Elapsed: 00:00:00.53
+# Mc/sec: 3999.48
+//
+[ok]

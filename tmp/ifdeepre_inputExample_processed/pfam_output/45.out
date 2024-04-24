@@ -1,0 +1,94 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/45.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       45  [L=213]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.8e-08   34.3   0.3      3e-08   33.6   0.3    1.4  1  zf-C2H2_jaz      Zinc-finger double-stranded RNA-binding
+    1.1e-06   28.7   0.4    1.7e-06   28.1   0.4    1.3  1  zf-met           Zinc-finger of C2H2 type
+  ------ inclusion threshold ------
+       0.48    9.8   5.8       0.76    9.1   5.8    1.3  1  RNase_H2-Ydr279  Ydr279p protein family (RNase H2 complex com
+        1.9    8.6  12.2       0.14   12.3   5.0    1.9  2  Vfa1             AAA-ATPase Vps4-associated protein 1
+
+
+Domain annotation for each model (and alignments):
+>> zf-C2H2_jaz  Zinc-finger double-stranded RNA-binding
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.3   7.3e-12     3e-08       2      26 ..     102     126 ..     101     127 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 33.6 bits;  conditional E-value: 7.3e-12
+                  CBBTTTTBBBSSHHHHHCCTTSHHH CS
+  zf-C2H2_jaz   2 fYCvlCdKyFksenaldnHlkSKkH 26 
+                  f+C +Cd +Fk+  ++ +Hl+SK+H
+           45 102 FWCDACDLTFKDNLQFVEHLNSKQH 126
+                  99*********************** PP
+
+>> zf-met  Zinc-finger of C2H2 type
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.1   0.4   4.2e-10   1.7e-06       1      25 []     102     126 ..     102     126 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 28.1 bits;  conditional E-value: 4.2e-10
+  zf-met   1 fyCelCnvsftsetqlksHlrgKkH 25 
+             f+C++C+ +f++  q+  Hl++K+H
+      45 102 FWCDACDLTFKDNLQFVEHLNSKQH 126
+             9************************ PP
+
+>> RNase_H2-Ydr279  Ydr279p protein family (RNase H2 complex component)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1   5.8   0.00019      0.76     226     290 ..     142     203 ..     115     212 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 0.00019
+  RNase_H2-Ydr279 226 spldaylaelaklraeaealrsaalnvseerkrea.keekaekKrkkeeeekkkakesrgvkklkK 290
+                      +++ + l+ l+ +r+e +a  +  l +  e  re+ ++e+aek+rk +e+ +k+    +g ++  K
+               45 142 EDVVERLEWLKRKREEEKAKETVDLGTRLEVAREEeEKERAEKRRKRNEKRRKN----KGGEEEVK 203
+                      556667777778888877777766555555555555689999999998543333....33333333 PP
+
+>> Vfa1  AAA-ATPase Vps4-associated protein 1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.7      0.13   5.2e+02      55      87 ..      24      54 ..      11      83 .. 0.40
+   2 ?   12.3   5.0   3.5e-05      0.14      39     127 ..     106     197 ..     100     210 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.13
+  Vfa1 55 deeeeeaakkkkeleeeiekvkkeyeekqkkkk 87
+           ee++++a  +++  +  e+ k++ye+  + kk
+    45 24 REEYAQKALDRES--RIKEEGKAKYEAAISGKK 54
+          3333331111111..111222222222222222 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 3.5e-05
+  Vfa1  39 vCesHLkD.kqFatpivdeeeeeaakkkke.leeeiekvkkeyeekqkkkkekekkk...........kekdkkdkdkkkekekdkkkekekeeekkkelkk 127
+            C+   kD  qF++ + ++++  a+ ++ e +  ++e+v +++e  ++k++e+++k+           +    ++++k+  +++ k      ++ek+++ k 
+    45 106 ACDLTFKDnLQFVEHLNSKQHLYATGQSGEvKRATLEDVVERLEWLKRKREEEKAKEtvdlgtrlevaR----EEEEKERAEKRRK------RNEKRRKNKG 197
+           69999999889**99999866665555555577788999999998877777666554444444333321....1111111111111......2222222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (213 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                      1614  (0.098982); expected 326.1 (0.02)
+Passed bias filter:                      560  (0.0343432); expected 326.1 (0.02)
+Passed Vit filter:                        66  (0.00404759); expected 16.3 (0.001)
+Passed Fwd filter:                         6  (0.000367963); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.57u 0.20s 00:00:00.77 Elapsed: 00:00:00.32
+# Mc/sec: 1883.12
+//
+[ok]

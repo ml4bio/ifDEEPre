@@ -1,0 +1,46 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/23.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       23  [L=256]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    0.00024   20.5   3.1    0.00031   20.2   2.6    1.4  1  EBP       Emopamil binding protein
+
+
+Domain annotation for each model (and alignments):
+>> EBP  Emopamil binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.2   2.6   1.9e-08   0.00031     104     172 ..     174     242 ..     130     244 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 20.2 bits;  conditional E-value: 1.9e-08
+  EBP 104 kplrhllqivlataelyGgvlyfatewlegslnldtseplylWvylvffNalWvviPllllvesvkeik 172
+          ++++ +l   +a++ l  +vly + e+++g +n  ++++  +++  ++ N++W+++P++l++ s kei 
+   23 174 AAKAVVLLYGVALMTLSKTVLYWLNEVFSGFANIGHNDASSIFFLWALPNGMWILFPAYLVYVSGKEIL 242
+          46777888899******************9999999999999999999****************99985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (256 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       421  (0.0258187); expected 326.1 (0.02)
+Passed bias filter:                      302  (0.0185208); expected 326.1 (0.02)
+Passed Vit filter:                        20  (0.00122654); expected 16.3 (0.001)
+Passed Fwd filter:                         1  (6.13271e-05); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.54u 0.18s 00:00:00.72 Elapsed: 00:00:00.32
+# Mc/sec: 2269.43
+//
+[ok]

@@ -1,0 +1,194 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/35.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       35  [L=523]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.4e-13   50.7   5.0    2.3e-13   50.1   5.0    1.4  1  zf-RING_2     Ring finger domain
+    4.7e-11   42.1   1.4    9.2e-11   41.1   1.4    1.5  1  zf-RING_11    RING-like zinc finger
+    3.6e-08   33.0   5.1    5.8e-08   32.3   5.1    1.4  1  zf-C3HC4_2    Zinc finger, C3HC4 type (RING finger)
+    6.7e-08   32.2   3.5    1.1e-07   31.5   3.5    1.3  1  zf-C3HC4      Zinc finger, C3HC4 type (RING finger)
+    2.6e-06   27.5   5.4    7.3e-06   26.1   5.4    1.7  1  zf-rbx1       RING-H2 zinc finger domain
+    6.1e-05   22.8   1.7    9.7e-05   22.1   1.7    1.3  1  zf-RING_5     zinc-RING finger domain
+    7.2e-05   22.4   3.7    0.00013   21.7   3.7    1.3  1  Prok-RING_4   Prokaryotic RING finger family 4
+     0.0054   16.6   0.8      0.011   15.6   0.8    1.5  1  zf-ANAPC11    Anaphase-promoting complex subunit 11 RING-H2 f
+     0.0059   16.3   1.2     0.0097   15.6   1.2    1.3  1  zf-C3HC4_3    Zinc finger, C3HC4 type (RING finger)
+      0.008   16.0   4.3      0.015   15.2   4.3    1.4  1  zf-RING_UBOX  RING-type zinc-finger
+  ------ inclusion threshold ------
+      0.056   13.1   3.1       0.11   12.1   3.1    1.4  1  zf-RING_4     RING/Ubox like zinc-binding domain
+       0.33   10.8   2.6       0.61    9.9   2.6    1.5  1  PHD           PHD-finger
+
+
+Domain annotation for each model (and alignments):
+>> zf-RING_2  Ring finger domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.1   5.0   1.7e-16   2.3e-13       3      44 .]     337     379 ..     335     379 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 50.1 bits;  conditional E-value: 1.7e-16
+  zf-RING_2   3 CpICleelesgdsvlllpCgHvfhreClekw.lrssstCPlCr 44 
+                C+IC++++e+g+++++lpC H fh  C+++w l  sstCPlCr
+         35 337 CSICTDDFETGQDLRVLPCDHKFHPACIDPWlLNVSSTCPLCR 379
+                *******************************5555555****9 PP
+
+>> zf-RING_11  RING-like zinc finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.1   1.4   6.8e-14   9.2e-11       2      29 .]     337     364 ..     336     364 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 41.1 bits;  conditional E-value: 6.8e-14
+  zf-RING_11   2 CsICLeefkpgqalfilpCsHvFHfkCI 29 
+                 CsIC ++f++gq l++lpC H FH  CI
+          35 337 CSICTDDFETGQDLRVLPCDHKFHPACI 364
+                 ***************************9 PP
+
+>> zf-C3HC4_2  Zinc finger, C3HC4 type (RING finger)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.3   5.1   4.3e-11   5.8e-08       2      40 .]     337     378 ..     336     378 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 32.3 bits;  conditional E-value: 4.3e-11
+  zf-C3HC4_2   2 CpiCldmlkdpsvvt..pCgHvfCqkCilrsLeekn.eCPlC 40 
+                 C iC d ++++ ++   pC H+f+  Ci+++L + +  CPlC
+          35 337 CSICTDDFETGQDLRvlPCDHKFHPACIDPWLLNVSsTCPLC 378
+                 **********9877777*************8776666***** PP
+
+>> zf-C3HC4  Zinc finger, C3HC4 type (RING finger)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.5   3.5   7.9e-11   1.1e-07       1      41 []     337     378 ..     337     378 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 31.5 bits;  conditional E-value: 7.9e-11
+               -SST-S--SS-E..EETTTSEEESCHHHHHHHHCTSSBSTTTT CS
+  zf-C3HC4   1 CpiCleeakepn..elleCkHsfCskCirkilksrkkvkCPlC 41 
+               C+iC++ +++ +  ++l+C+H+f+ +Ci+ +l  + + +CPlC
+        35 337 CSICTDDFETGQdlRVLPCDHKFHPACIDPWLL-NVSSTCPLC 378
+               **********9999*******************.88899**** PP
+
+>> zf-rbx1  RING-H2 zinc finger domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.1   5.4   5.4e-09   7.3e-06      29      55 .]     352     379 ..     334     379 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 26.1 bits;  conditional E-value: 5.4e-09
+  zf-rbx1  29 lGeCgHaFHlhCiskWlkt.rkvCPlcr 55 
+              +  C H+FH  Ci+ Wl + +++CPlcr
+       35 352 VLPCDHKFHPACIDPWLLNvSSTCPLCR 379
+              447*************988899*****8 PP
+
+>> zf-RING_5  zinc-RING finger domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.1   1.7   7.2e-08   9.7e-05       2      43 ..     337     379 ..     336     380 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 22.1 bits;  conditional E-value: 7.2e-08
+  zf-RING_5   2 CnkCfeklskeekfyltsCgHifCekClkklk.ekeavCpiCr 43 
+                C++C + ++  ++  +++C H f+ +C++  + + + +Cp Cr
+         35 337 CSICTDDFETGQDLRVLPCDHKFHPACIDPWLlNVSSTCPLCR 379
+                ********88888*****************999*********8 PP
+
+>> Prok-RING_4  Prokaryotic RING finger family 4
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.7   3.7   9.2e-08   0.00013       1      40 [.     337     382 ..     337     387 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 21.7 bits;  conditional E-value: 9.2e-08
+  Prok-RING_4   1 CvlCgeq...ekkailepCgHlvCkeCfdsk..dls.sCPlCqrri 40 
+                  C +C+     +++ ++ pC H +  +C d +  + s +CPlC+  +
+           35 337 CSICTDDfetGQDLRVLPCDHKFHPACIDPWllNVSsTCPLCRIDL 382
+                  999*9888889********************664447*****9655 PP
+
+>> zf-ANAPC11  Anaphase-promoting complex subunit 11 RING-H2 finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.8   8.4e-06     0.011      51      79 ..     354     380 ..     334     384 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 8.4e-06
+                 TTS-EEEHHHHHHHHHHHTTS-B-TTTSS CS
+  zf-ANAPC11  51 kckhnfhlhcilkwletetskglcpmcrq 79 
+                  c+h+fh  ci  wl + +  + cp+cr 
+          35 354 PCDHKFHPACIDPWLLNVS--STCPLCRI 380
+                 6**************8765..58****96 PP
+
+>> zf-C3HC4_3  Zinc finger, C3HC4 type (RING finger)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   1.2   7.2e-06    0.0097       4      45 ..     336     380 ..     333     383 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 7.2e-06
+                 B-TTTSS...SBS-EEETTEEEEEE-HHHHHHHHH.TT-B-TTT-- CS
+  zf-C3HC4_3   4 eCviCle...rprnvvllpCgHlvlCeeCaekllk.ekkkCpiCrr 45 
+                  C+iC +   + ++  +lpC H  +  +C + +l   + +Cp+Cr 
+          35 336 GCSICTDdfeTGQDLRVLPCDHK-FHPACIDPWLLnVSSTCPLCRI 380
+                 6****994445889*********.99*****99877********96 PP
+
+>> zf-RING_UBOX  RING-type zinc-finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   4.3   1.1e-05     0.015       1      38 []     337     376 ..     337     376 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.1e-05
+  zf-RING_UBOX   1 CpIClelft...dP.llpCGHtFCreClwelskslegkfkCP 38 
+                   C+IC ++f+   d  +lpC H F+  C+      l+ + +CP
+            35 337 CSICTDDFEtgqDLrVLPCDHKFHPACI--DPWLLNVSSTCP 376
+                   ********965433567***********..577899999998 PP
+
+>> zf-RING_4  RING/Ubox like zinc-binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   3.1   8.1e-05      0.11       1      44 [.     337     379 ..     337     382 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 8.1e-05
+  zf-RING_4   1 cplCdeeldetdkdlkpCeCgyqiClfCyhrileeeegrCPaCr 44 
+                c +C++++ et++dl+  +C++++   C +  l + +  CP Cr
+         35 337 CSICTDDF-ETGQDLRVLPCDHKFHPACIDPWLLNVSSTCPLCR 379
+                899****9.799999999999999999999999999*******9 PP
+
+>> PHD  PHD-finger
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   2.6   0.00045      0.61       2      50 ..     337     379 ..     336     381 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.00045
+          BTTTTSTTSTTSSEEEESSSSCEEETTTSTSTHSHHSHHSSTBSSTTTH CS
+  PHD   2 CavCkeksdeegelvqCdgCkrwfHqkClkipleseekpegewlCekCk 50 
+          C++C + + e g+ +    C++ fH++C+++ l   ++++   +C+ C+
+   35 337 CSICTD-DFETGQDLRVLPCDHKFHPACIDPWLL--NVSS---TCPLCR 379
+          999999.566666666667899*********988..5555...788886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (523 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       853  (0.052312); expected 326.1 (0.02)
+Passed bias filter:                      594  (0.0364283); expected 326.1 (0.02)
+Passed Vit filter:                        57  (0.00349565); expected 16.3 (0.001)
+Passed Fwd filter:                        12  (0.000735925); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):              12  [number of targets reported over threshold]
+# CPU time: 0.73u 0.18s 00:00:00.90 Elapsed: 00:00:00.38
+# Mc/sec: 3854.44
+//
+[ok]

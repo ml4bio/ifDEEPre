@@ -1,0 +1,87 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/16.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       16  [L=690]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-23   83.6   0.0    1.9e-23   82.7   0.0    1.5  1  XPG_N       XPG N-terminal domain
+    2.2e-20   72.7   0.0    4.8e-20   71.6   0.0    1.6  1  XPG_I       XPG I-region
+     0.0075   15.6   0.0      0.011   15.0   0.0    1.3  1  XPG_I_2     XPG domain containing
+     0.0075   16.7   0.0      0.018   15.5   0.0    1.5  1  5_3_exonuc  5'-3' exonuclease, C-terminal SAM fold
+
+
+Domain annotation for each model (and alignments):
+>> XPG_N  XPG N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.7   0.0   4.7e-27   1.9e-23       1     100 [.       1      98 [.       1      99 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 82.7 bits;  conditional E-value: 4.7e-27
+            XSSTTHHHHHHHH-GEEEEEGGGGTT-EEEEEHCCHHHHHHHHSE-CTTCE-CT.HHHHHHHHHHHHHHHTT-EEEEEE-SS--HHHHHHHHHHHHHHHC CS
+  XPG_N   1 MGikgLlkllkevaairsvsiealegkklaiDaslwlyrfliavreqlgnalentshlmglfsrllrlldfgikPifVFdgkapdlkkeelekrserrqe 100
+            MGi+gLl+llk ++  ++ s+++++g++la+Da+ wl+r  ia++  l++ + + ++l ++++r+ +l++f+++P++VFdg+ ++ k++++  r +rr e
+     16   1 MGIQGLLPLLKSIH--KPCSLKHFSGQTLAVDAYGWLHRGTIACAIDLAQGKPTRKWLDFVIHRVRMLQHFNVTPYLVFDGDYLPSKSGTEVDRAARRRE 98 
+            **************..*********************************************************************************986 PP
+
+>> XPG_I  XPG I-region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.6   0.0   1.2e-23   4.8e-20       3      94 .]     140     226 ..     138     226 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 71.6 bits;  conditional E-value: 1.2e-23
+            HT--EEE-SS-HHHHHHHHHHTTSSSEEE-SSSHHHHTT-SEEEESTT-ECECTT--EEECEEEEEEHHHHHHHHT--HHHHHHHHHHHCET CS
+  XPG_I   3 mgipyvqApgEAEAqcayLqkkglvdaviseDsDlllFGapkvlrnlskkkskkkkekekkkvevidlekvlkelgltreqlidlaillgcD 94 
+            +++py++Ap+EA++q++yL+++glv+++iseDsDll+FGa+++l++l   +++++      + + ++ ++ ++ +g+++++++ +ail gcD
+     16 140 LNLPYLVAPYEADSQMVYLERRGLVHGIISEDSDLLVFGARCLLTKLD--QYGEC---IMINRDDFTACRDISLVGWSDADFRLMAILNGCD 226
+            799********************************************8..77888...44455556666777889****************9 PP
+
+>> XPG_I_2  XPG domain containing
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.0   2.8e-06     0.011       5      59 ..     129     179 ..     125     269 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 2.8e-06
+  XPG_I_2   5 mvpavieaLknrwkakditevvpgEADkfcAvlA.rklgcaVLTsDSDLlvhdlge 59 
+              m   +i+ Lk    ++ ++ v p EAD +  +l  r l   + ++DSDLlv+  g+
+       16 129 MARQLIDELK---RLNLPYLVAPYEADSQMVYLErRGLVHGIISEDSDLLVF--GA 179
+              5667889999...69999***************9999**************9..44 PP
+
+>> 5_3_exonuc  5'-3' exonuclease, C-terminal SAM fold
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.0   4.4e-06     0.018      18      50 ..     226     259 ..     222     281 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 4.4e-06
+  5_3_exonuc  18 DnipGvpgiGektAakLlkeygsleailenld.e 50 
+                 D + G++++G ktA ++++++++l+ i+++++ e
+          16 226 DYLAGIEKMGLKTAHRMIRKHKTLDRIIRSAQfE 259
+                 7899************************988642 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (690 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       383  (0.0234883); expected 326.1 (0.02)
+Passed bias filter:                      274  (0.0168036); expected 326.1 (0.02)
+Passed Vit filter:                        25  (0.00153318); expected 16.3 (0.001)
+Passed Fwd filter:                         4  (0.000245308); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.82u 0.17s 00:00:00.99 Elapsed: 00:00:00.41
+# Mc/sec: 4782.72
+//
+[ok]

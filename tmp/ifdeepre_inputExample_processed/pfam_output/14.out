@@ -1,0 +1,113 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/14.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       14  [L=962]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    3.5e-21   75.7   0.0    5.6e-21   75.0   0.0    1.3  1  DNA_ligase_A_M  ATP dependent DNA ligase domain
+      9e-17   61.8   0.0    1.6e-16   61.0   0.0    1.5  1  DNA_ligase_A_N  DNA ligase N terminus
+  ------ inclusion threshold ------
+      0.075   13.0   0.4        0.2   11.6   0.4    1.7  1  Sox17_18_mid    Sox 17/18 central domain
+        0.1   13.0   0.0        0.3   11.6   0.0    1.8  1  DNA_ligase_A_C  ATP dependent DNA ligase C terminal region
+
+
+Domain annotation for each model (and alignments):
+>> DNA_ligase_A_M  ATP dependent DNA ligase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.0   0.0   1.4e-24   5.6e-21       7     191 ..     267     472 ..     263     484 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 75.0 bits;  conditional E-value: 1.4e-24
+                     ESCHHHHHHHTTTSEEEEEEEESSEEEEEE....EETTEEEEEETTS-B-GGGCHHHHHHHHHHBSTTESE......EEEEEEEEEEETTTTCBE CS
+  DNA_ligase_A_M   7 lksiekalkkleekafivEiKyDGeRaqvh....kegdkvklfSRrlkditaakpelvkalkeafkkdeks......vilDGElvavdketgeil 91 
+                     ++si++ l+  +++ +++E KyDGe  qvh    k +d  +++S +++d t+++  l + +++++     +      +il GElv++   +++i+
+              14 267 ARSIKHCLQMTSGERWLLERKYDGEYCQVHvdltKGEDWLRIYSKSGRDSTEDRAGLRETIRKCLRIGSDKckferaCILVGELVVFSDTENSIQ 361
+                     45999999999***************99996665567889************88888888888776654444444459***************** PP
+
+                     HHHHHCHHH.HCHC......CTHHHHHHSEEEEEEEEEEEETTEEHTTSCHHHHHHHHHHHB--BTTTEEE--EEEE.....SSHHHHHHHHHHH CS
+  DNA_ligase_A_M  92 pfqklasrk.kkkk......kveeklkeaelclfvFDiLyldgesltdeplkeRrklLeeilkesedrvelaeslev.....kdveeleelleea 174
+                      f k+++++ ++ +      +  ++ +  +l +++FD+L +d+e ++ ++++eR+++L+++ k++ +r   aes ++     k    l + ++ +
+              14 362 GFDKIRKHVsRAGVflgnenDSPRQ-SGEHLMIILFDLLLFDDEAVLSRSVEERKAKLSSVYKKIHGRAAPAESCVIdfsqpKAEHRLMNQFAAS 455
+                     ********95555599987544444.788*********************************999999999998887443335556778888999 PP
+
+                     HHTTECEEEEEETT-CC CS
+  DNA_ligase_A_M 175 iseglEGlvvKnpdskY 191
+                     i+ ++EGlv+K    +Y
+              14 456 IACRHEGLVLKPCGVPY 472
+                     ***********988887 PP
+
+>> DNA_ligase_A_N  DNA ligase N terminus
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.0   0.0     4e-20   1.6e-16       2     173 .]       5     204 ..       4     204 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 61.0 bits;  conditional E-value: 4e-20
+                     CHHHHHHHHHHCC..---HH.........HHHHHHHHHH...HTS-..SHHHHHHHHHH..SS-CCC.S------HHHHHHHHHHHHT--HHHHH CS
+  DNA_ligase_A_N   2 Faefaelfekiee.stkkrl.........ekrailanff...rkvesagpedlypalrL..llPdrd.greygigekllakalaealglskkkik 80 
+                     Fa++++ +e+ ee    ++             +  a++f   r+ + a + ++   + L  +lP r+ +r y +++ +l k+l+++lgls    +
+              14   5 FAHLCDYLERCEEiVHHNPPlapaeqksrH-YRQHASWFashRQAIDALD-QFGTSALLstFLPCRRkDRIYSLQPASLFKLLGRCLGLSAS-AR 96 
+                     899999999999976633336777744422.2222333445544443344.455555557899999999*********************77.44 PP
+
+                     HH.......HHHHS-HHHHHHHHHCCHHHH------BHHHHHHHHHHHHH-.......STTHH......HHHHHHHHHHHHHS-HHHHHHHHHHH CS
+  DNA_ligase_A_N  81 da.......lakvgDlgevaeevlskrstlakkspltleevnelLdklaaa.......gkgse......dekkkilkkllkraspeEakylirii 155
+                     ++       +   gDlge+++++l++r +  + +++tl+ev++ L+ l aa           +      ++    l+++l r+ + Eak+++r++
+              14  97 QElatfktpG--NGDLGECLQRLLRTRGP-PPLTTVTLQEVDDALHALVAAnrfsgpsV---RqsfrppATNDPSLADVLLRLHAVEAKWFVRLV 185
+                     4446666544..6***********98877.88889*************76656654440...1445555999*********************** PP
+
+                     CT---S.S--HHHHHHHHH CS
+  DNA_ligase_A_N 156 lkdlri.gvsektvldala 173
+                     lkd+    v e+++l+  +
+              14 186 LKDFSPvTVNERSILSSVH 204
+                     ****9879******99877 PP
+
+>> Sox17_18_mid  Sox 17/18 central domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.4     5e-05       0.2      16      27 ..     740     752 ..     732     764 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 5e-05
+  Sox17_18_mid  16 gLPT.PEmSPLDa 27 
+                   +LPT P+ SPLD+
+            14 740 PLPTpPDSSPLDG 752
+                   6***********8 PP
+
+>> DNA_ligase_A_C  ATP dependent DNA ligase C terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   7.4e-05       0.3      54      99 .]     585     630 ..     518     630 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 7.4e-05
+                     --HHHHTTEE.E-TT-EEEEEESEEECTSSSTTEECT-EEEEE-TTS CS
+  DNA_ligase_A_C  54 vpeeekrdvW.vePelvveVkfaeitasgkykaslRfPrfkrlReDk 99 
+                      +e+++   + ++  lv+eV ++ +++s+     lR+Pr+k+l +D+
+              14 585 SDETPRM-DFcFRDPLVFEVLGSSFSKSPGGYFMLRHPRVKKLHQDR 630
+                     3333333.33377789*************6666**********9995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (962 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       380  (0.0233043); expected 326.1 (0.02)
+Passed bias filter:                      315  (0.019318); expected 326.1 (0.02)
+Passed Vit filter:                        26  (0.00159451); expected 16.3 (0.001)
+Passed Fwd filter:                         4  (0.000245308); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 1.04u 0.17s 00:00:01.21 Elapsed: 00:00:00.53
+# Mc/sec: 5174.68
+//
+[ok]

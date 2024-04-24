@@ -1,0 +1,53 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/22.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       22  [L=274]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      5e-44  149.6   0.2    7.3e-44  149.0   0.2    1.3  1  LacAB_rpiB  Ribose/Galactose Isomerase
+
+
+Domain annotation for each model (and alignments):
+>> LacAB_rpiB  Ribose/Galactose Isomerase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  149.0   0.2   4.5e-48   7.3e-44       1     139 []     110     251 ..     110     251 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 149.0 bits;  conditional E-value: 4.5e-48
+                 EEEEE-GCGHHHHHHHHHHHHH.TTT.EEEEECESS.SS---HHHHHHHHHHHHHTTSSSEEEEEESSSHHHHHHHHTSTT--EEE-SSHHHHHHHHHT CS
+  LacAB_rpiB   1 iaigsDhagfelkekiieeLkk.kgh.evidvgtes.eesvdYpdfakkvaeavasgeadlgiliCgtGiGmsiaankvkgiraalcsdeesAklareh 96 
+                 iaig+D+ag+ +k+ki+e ++k   + +vidvg++s e+++ Yp+ a +++++va+g+ad+++liCgtG G++i+ankv+gira++++d++s+++a  +
+          22 110 IAIGCDDAGCGYKNKIKEDFEKdPRVeKVIDVGVNSsEDKTAYPHPAVDASKLVAEGKADRALLICGTGLGVAISANKVPGIRAVTAHDSFSVERAVLS 208
+                 8*******************77334438*****999999************************************************************ PP
+
+                 T--SEEEEETTTS-HHHHHHHHHHHHHS---.HTHHHHHHHHH CS
+  LacAB_rpiB  97 nnanvlalGarvigeelakeivkaFlstefeeggrharrvdki 139
+                 nna+vl++G+rv+g e+a++++k++l  +f+e++++a++vd i
+          22 209 NNAQVLCMGERVVGVEVARRLAKEWLGYKFDEKSASAKKVDAI 251
+                 ******************************9899******986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (274 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       587  (0.035999); expected 326.1 (0.02)
+Passed bias filter:                      302  (0.0185208); expected 326.1 (0.02)
+Passed Vit filter:                        29  (0.00177849); expected 16.3 (0.001)
+Passed Fwd filter:                         1  (6.13271e-05); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.58u 0.17s 00:00:00.75 Elapsed: 00:00:00.32
+# Mc/sec: 2391.12
+//
+[ok]

@@ -1,0 +1,84 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/2.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       2  [L=454]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.7e-33  116.2   6.1    7.1e-29  101.1   2.9    2.7  2  ORC6      Origin recognition complex subunit 6 (ORC6)
+  ------ inclusion threshold ------
+      0.015   14.4   0.2       0.17   10.9   0.1    2.2  2  DUF4529   Protein of unknown function (DUF4529)
+
+
+Domain annotation for each model (and alignments):
+>> ORC6  Origin recognition complex subunit 6 (ORC6)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.1   2.9   8.7e-33   7.1e-29       1     216 [.       9     262 ..       9     265 .. 0.72
+   2 !   15.1   0.0   1.2e-06    0.0096     313     356 ..     343     430 ..     325     431 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 101.1 bits;  conditional E-value: 8.7e-33
+  ORC6   1 LsdllpthsgglpkkllslassLynlSlskkvvlkneeEiARchiCaelAaekLkekldlpysvkkiPlppkaykklldlfrqsLsnsssatstPskspsspst. 104
+           L +l+pt+++  p++l++l++sL+++S++k+++lk++eEi+R+++Ca++A+e+L ++ld +  v ++P+ p+ ykkl+ +++  Ls       tP++++ + +  
+     2   9 LITLVPTLNSL-PQELIDLSTSLLAQSRNKAASLKPDEEIGRTYACAHIAVERLRNRLDIDKVVARPPVAPRIYKKLYGYLDAALSVPA----TPRTNRLKDVGt 108
+           56899999987.*************************************************************************9999....555555555445 PP
+
+  ORC6 105 .......................dpkslrkqlfsTPtKsktlktalsa...........sksssplkrrrklaneedgeeeeedapswvstsir........... 164
+                                  +p++  +++  TP K++ +     a            + +s  k + +     d+ee++++  + v+ + +           
+     2 109 vgtpgsgrgrrsalgtpvgtpskTPAKSVRSAGVTPLKTPIS-----AaksvgsvtasgRRTRSAAKAPEEEVVIADSEEDIQK--QIVQEQEKgynlptqvppl 206
+           555544443333233333322222333333333333333333.....1444456433444444444444445555555555555..44444444677999***** PP
+
+  ORC6 165 ....dsrpeisrtlspskslgdesilfndss.ddekkseqksprkllkkkkdkisde 216
+               +  +++ ++ s+++ +  ++il+ ++  d e+k ++++pr  +kk+k++ + +
+     2 207 vmsvCDALDGPQA-STHVLAALSAILQLRGYnDAETKTNKQTPRSSVKKRKRTSTSA 262
+           ***9777777777.89*************9999999999999999999999987765 PP
+
+  == domain 2  score: 15.1 bits;  conditional E-value: 1.2e-06
+  ORC6 313 Wfrei............................................ekkydyfdgaeeeesqakeskareglGsMlqdrvdylSe 356
+           Wf  +                                               +d++ +aeee+ ++  + +r+glG+M qd+vd+lS 
+     2 343 WFTAVkaaattiaipeaqtpkknkppaktplhrkekhaprpaakdldmdTVMEDADAEAEEEDADKPGAGLRSGLGTMFQDSVDWLSM 430
+           555555555555555555555555555555555555555555444444455677788888888888888888**************96 PP
+
+>> DUF4529  Protein of unknown function (DUF4529)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.0     0.027   2.2e+02     218     281 ..       9      69 ..       5      85 .. 0.73
+   2 ?   10.9   0.1   2.1e-05      0.17     326     396 ..     219     289 ..     208     296 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.027
+  DUF4529 218 llvLPPLkasskngldvlgkksknvllqseekvlsvekdecvalayglktvdgkgekrplelak 281
+              l+ L P   s ++    l+  s ++l qs +k+ s + de +  +y    +  ++ ++ l+++k
+        2   9 LITLVPTLNSLPQ---ELIDLSTSLLAQSRNKAASLKPDEEIGRTYACAHIAVERLRNRLDIDK 69 
+              5555444444444...3567899*******************9999988887777777777765 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 2.1e-05
+  DUF4529 326 ssvkylatlq.llqkqgvqnykaklkakelrppvntqkrvlteakqenrpqtletkvfprpllPsLtvsRvv 396
+              +s + la+l  +lq +g ++  +k  ++ +r++v+ +kr+ t a +e  +q  +  + p++ lP+L  +  +
+        2 219 ASTHVLAALSaILQLRGYNDAETKTNKQTPRSSVKKRKRTSTSAEEEPTSQEDDKAITPTS-LPALLAAIAL 289
+              46788999863799***********************************999998888887.6888766555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (454 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       786  (0.0482031); expected 326.1 (0.02)
+Passed bias filter:                      428  (0.026248); expected 326.1 (0.02)
+Passed Vit filter:                        34  (0.00208512); expected 16.3 (0.001)
+Passed Fwd filter:                         4  (0.000245308); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.78u 0.18s 00:00:00.96 Elapsed: 00:00:00.39
+# Mc/sec: 3328.55
+//
+[ok]

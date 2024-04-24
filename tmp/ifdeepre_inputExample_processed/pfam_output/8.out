@@ -1,0 +1,47 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/8.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       8  [L=195]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    3.1e-26   91.5   2.8    4.5e-26   90.9   2.8    1.1  1  RF-1      RF-1 domain
+
+
+Domain annotation for each model (and alignments):
+>> RF-1  RF-1 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.9   2.8   2.8e-30   4.5e-26       6     107 ..      43     141 ..      41     148 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 90.9 bits;  conditional E-value: 2.8e-30
+           E--GGGEEEEEE---SSSSSSGCSSSCEEEEEETTTTEEEEEEECSSSHHHHHHHHHHHHHHHHHHHHHHHCCCCCHTTTTT--S--S---S..ECEEEECG CS
+  RF-1   6 eidekdleidtfrssGaGGQnVNktesaVrlthlptgvivvecqeeRsqekNrekAlerLkaklkekeleeekeeekkrrvkkekkkigtgssekiRtynkk 107
+           +i+e+d++  + +  G+GGQ++Nkt+saV+l hlptg iv++cqe+Rs+ +Nr+ A+++L+++++   l ++ + + k++  +ekkk ++++++ +R+y k 
+     8  43 TIEESDITEAFLKGTGPGGQKINKTSSAVQLKHLPTG-IVIKCQETRSRSQNRKIARRILAERIELLTLGDDSRAALKAE--REKKKKASKNKKARRKYRKL 141
+           699**********************************.8*************************5554444444333333..32333344447889999874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (195 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                      1531  (0.0938918); expected 326.1 (0.02)
+Passed bias filter:                      651  (0.039924); expected 326.1 (0.02)
+Passed Vit filter:                        76  (0.00466086); expected 16.3 (0.001)
+Passed Fwd filter:                         1  (6.13271e-05); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.56u 0.21s 00:00:00.77 Elapsed: 00:00:00.33
+# Mc/sec: 1687.96
+//
+[ok]

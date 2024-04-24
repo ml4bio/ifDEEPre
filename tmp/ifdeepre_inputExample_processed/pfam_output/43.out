@@ -1,0 +1,82 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/43.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       43  [L=609]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    1.4e-97  326.2   0.0    1.9e-97  325.8   0.0    1.2  1  GatB_N     GatB/GatE catalytic domain
+    1.6e-20   73.3   0.8    3.2e-20   72.4   0.8    1.5  1  GatB_Yqey  GatB domain
+
+
+Domain annotation for each model (and alignments):
+>> GatB_N  GatB/GatE catalytic domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  325.8   0.0  2.3e-101   1.9e-97       2     272 ..      93     395 ..      92     396 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 325.8 bits;  conditional E-value: 2.3e-101
+             EEEEEEEEEB--SB-SSSSSBSSSSCESTTSS--TTTTTSTT----EEHHHHHHHHHHHHHTTEEE-SEE-EEEEE-TCTTCTTSEEEEESSS-SEEEEEEEE CS
+             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  GatB_N   2 viGlEiHaqlktksKlFssasteeegeepnsevsevdlalPGtlPvlnkeavelaikaalalnceiaeeskfdRKnyfypdlpkgyQitqkeeplakeGslel 104
+             ++G+E+Ha+l+t++KlFs+a+t + ++epn++v+ +d+alPG++P ++k+++  a++aala++c+i+++s++dRK+yfy+d+p+gyQitq+++p+a++Gsl+l
+      43  93 TVGIEVHAELNTAHKLFSTAQT-SLNAEPNEHVARFDAALPGAQPAFQKATLIPALRAALAMDCDIQSRSSWDRKHYFYQDQPNGYQITQYYHPFARNGSLTL 194
+             79*******************5.5999***************************************************************************9 PP
+
+             .................TEEEEEEEEEEEE---EEEEEETTEEEEETTSTT-EEEEEEE-STB-SHHHHHHHHHHHHHHHHHHTSB--SGGGTTEEEEEEEEE CS
+             .................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  GatB_N 105 .................ekkvrierihlEeDaaksvheekeeslvdlnRaGvpLiEivtepdlrspeearavveklrellralgvsdgnmeeGslRcDvNvSv 190
+                                +++i++i++E+D+ak+  +  ++ l+d+nR++ pLiEi+t p+++sp++a+a+v+k+++ll++++ + ++me+G lR+DvNvSv
+      43 195 tledgidpndlsepgatGLTIGIKQIQMEQDTAKTALQPPSTYLLDFNRVSHPLIEIITLPQIHSPATAAATVRKIQSLLKSVDSCVAGMETGGLRADVNVSV 297
+             888888888888777777777****************9999************************************************************** PP
+
+             CTS.E.......TTSSS.---EEEEEE-SHHHHHHHHHHHHHHHHHHH.......-EEEEEETTTTEEEEECC--------EEE-TTS--EE--HHHH CS
+             xxx.x.......xxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.......xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  GatB_N 191 ree.e.......kgeee.gtrvEiKnlnslksiekaieyeierqiell.......qeTrkfdedkgetvslRskeeaedYryfpepdlppleiseeli 272
+             r++ +       +g +  gtr+EiKnl+s+k++e+a+++e +rqi++l        eTr+++  ++et++lRske + dYry+p+pdlpp+ is+el+
+      43 298 RKRgStgenneySGVKGlGTRTEIKNLSSFKAVEDAVTAERDRQIKVLeaggvieGETRGWTIGSTETTRLRSKEGEVDYRYMPDPDLPPVLISSELV 395
+             *874466555432333379***************************************************************************9987 PP
+
+>> GatB_Yqey  GatB domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.4   0.8   3.9e-24   3.2e-20      12     148 .]     464     607 ..     456     607 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 72.4 bits;  conditional E-value: 3.9e-24
+                .HHHHHHHHHTCHHHHHHHHTXXTTCSSTTHHHHHHHHHHHHTTSSGHHHHHHHHHHHHHHTXXH....HHHHHHCTXXXXX.XSSXHHHHHHHHHHTXH CS
+  GatB_Yqey  12 daklaanwllnellgelnkegleieelkltpeqlaellkliaegkIskkiakevleelleegksp....eeiieekgLkqis.deeeleklveeviaenp 106
+                  kl+anw+l+e+ g l + g e+++l +t e+la ll+ + +++I+++ +k++l++l++e+++     ++ i+e +L+    ++ee  +l + ++aenp
+         43 464 VGKLVANWVLHEIGGLLTSDGREWSDLTITTEELASLLANLMSKQITARVGKQILQQLYDEDSDDrisvDARIDEGNLRLRPiSREEYIELAQSIMAENP 563
+                479********************************************************7744433455999999987655555588888********** PP
+
+                HHHHHHTTXXT.TSTHHHHHHHHHT.TSSXSXHHHHHHHHHHHS CS
+  GatB_Yqey 107 kavedyksgke.kalkflvGqvMkk.tkGkadpklvnellkekL 148
+                ++v  ++++ +     ++vGq+ ++  +G++++++++e+++e L
+         43 564 DMVSAVRDKGQkGKTMWFVGQMVRRaEEGTVEAEKAKEIIEELL 607
+                ******9877758999*****8876489*************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (609 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       630  (0.0386361); expected 326.1 (0.02)
+Passed bias filter:                      487  (0.0298663); expected 326.1 (0.02)
+Passed Vit filter:                        33  (0.00202379); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.82u 0.21s 00:00:01.03 Elapsed: 00:00:00.43
+# Mc/sec: 4033.51
+//
+[ok]

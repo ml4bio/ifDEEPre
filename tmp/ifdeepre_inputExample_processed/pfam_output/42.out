@@ -1,0 +1,59 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/42.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       42  [L=318]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.3e-18   67.4   6.5    3.4e-18   66.1   6.5    1.7  1  MIP       Major intrinsic protein
+
+
+Domain annotation for each model (and alignments):
+>> MIP  Major intrinsic protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.1   6.5   2.1e-22   3.4e-18       6     212 ..      50     270 ..      45     285 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 66.1 bits;  conditional E-value: 2.1e-22
+          HHHHHHHHHHHHHHHHHHHHHHHHHCCCSSCSSSSTTSSHHHHHHHHHHHHHHHHHHHHHHHCHT-S-SHHHHHHHHHTTSSSHHHHHHHHHHHHHHHHHHHHHHH CS
+  MIP   6 kflravlAEflatlllvfigvgsalnvkkkvsslaslvsvtleavalafglalavlvylaagiSGaHlNPavTlallvarkisllrailYivaQllGaivaaallk 111
+          + lr+++AE+ + +++v+ g++s++++  + ++    + ++l++v +afg+++a ++ +           a+T+ ++  + ++ +++++Yi aQ+ Ga++a ++++
+   42  50 RWLREMMAEATGVFFYVYPGIASTASFLLNETN---PAFGSLLQVGFAFGFGIAFAIIT----------CAMTICFATWQGFPWKKVPYYIFAQIFGAFMAGLFVY 142
+          5689******************98877766655...33578999999999999888755..........589********************************** PP
+
+          HHCHHH..................HHHTTTTSSSS.STTSSHHHHHHHHHHHHHHHHHHHHHHCSTTSSSSTCHGHHHHHHHHHHHHHHHHHHHHST-SSHHHHHH CS
+  MIP 112 lltkgl..................esraglfansl.kpglsagqalvvEiiltfvLvlvvfaltddkrkvslgelaplaigllvaliilvgipltGaamNpArslg 198
+          + ++++                     a+ f+ ++ + +++ g  +++E+++   + ++++a  d+ + + + + ap aigl++++++ + +++t ++ N Ar+lg
+   42 143 GQYHEQivaysaatiaagkgtvfnGGPASIFCSFPgETQTNLGYLFMIEFFVDSYIGIIIWACLDPANPFVSPQAAPWAIGLSYSVMVWSFADIT-ISTNMARDLG 247
+          ****999*************9887666788888883457889999**************************999********************7.899******* PP
+
+          HHHHHTH.........STTTTHH CS
+  MIP 199 pavvlnk.........fedhwvy 212
+           ++v+           +++ w+ 
+   42 248 TRLVALIffgreaftyHSYSWIS 270
+          ****9887888887766666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (318 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       635  (0.0389427); expected 326.1 (0.02)
+Passed bias filter:                      367  (0.0225071); expected 326.1 (0.02)
+Passed Vit filter:                        27  (0.00165583); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.59u 0.19s 00:00:00.78 Elapsed: 00:00:00.32
+# Mc/sec: 2767.24
+//
+[ok]

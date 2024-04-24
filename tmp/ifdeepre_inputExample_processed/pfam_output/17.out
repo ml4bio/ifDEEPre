@@ -1,0 +1,264 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/17.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       17  [L=746]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.9e-45  150.8   0.2    2.1e-24   85.3   0.0    4.2  3  Thioredoxin    Thioredoxin
+    1.7e-14   54.1   0.0    9.4e-07   28.8   0.0    4.1  4  Thioredoxin_6  Thioredoxin-like domain
+    1.9e-07   31.4   2.9      0.024   14.9   0.3    4.3  3  Thioredoxin_2  Thioredoxin-like domain
+    4.7e-06   26.7   1.3       0.23   11.7   0.0    4.2  3  Thioredoxin_8  Thioredoxin-like
+    0.00056   19.9   1.1       0.18   11.9   0.1    3.6  3  Thioredoxin_7  Thioredoxin-like
+     0.0036   16.6   1.1       0.65    9.2   0.4    2.7  3  OST3_OST6      OST3 / OST6 family, transporter family
+  ------ inclusion threshold ------
+      0.036   13.8   0.1          4    7.1   0.0    2.7  2  TraF           F plasmid transfer operon protein
+
+
+Domain annotation for each model (and alignments):
+>> Thioredoxin  Thioredoxin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.8   0.2   1.3e-18   3.1e-15       5     102 ..      94     211 ..      90     213 .. 0.92
+   2 !   85.3   0.0   8.8e-28   2.1e-24       4     101 ..     290     386 ..     287     389 .. 0.94
+   3 ?    2.9   0.0      0.04        92      54      84 ..     442     472 ..     426     488 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 55.8 bits;  conditional E-value: 1.3e-18
+                  SSHHHHHHHHTTCSSEEEEEEE-TTSHHHHCHHHHHHHHHHHCTT......................TSEEEEEETTTSHHHHHHTT-SSSSEEEEEE CS
+  Thioredoxin   5 ltkenFeeevakekklvlvdFyApwCgpCkalaPeleelaeelkd......................kvklakvdvdenkdlaskyevegiPtlklfk 80 
+                  l+ ++ +++++k   ++lv+F++p+C +Cka+aP++++l e +                        ++k+ak+d+ +  + +s+++++++Pt++ fk
+           17  94 LSGTTLDQDISK--GTWLVEFFSPYCHHCKAFAPTWQTLHEFYYTsdplpasnkessdslnsftryyDFKFAKIDCVAFGSACSDHNINSFPTVVQFK 189
+                  566777888888..9*************************9987778999999********************************************* PP
+
+                  TTEEEEEEESS-SHHHHHHHHH CS
+  Thioredoxin  81 ngkkvekyegarekdelaafik 102
+                  +gk+ve+ +ga + ++ +++i+
+           17 190 DGKEVERKVGALPMKDEVKWIE 211
+                  ***********98888788775 PP
+
+  == domain 2  score: 85.3 bits;  conditional E-value: 8.8e-28
+                  ESSHHHHHHHHTTCSSEEEEEEE-TTSHHHHCHHHHHHHHHHHCTTTSEEEEEETTTSHHHHHHTT-SSSSEEEEEETTEEEEEEESS-SHHHHHHHH CS
+  Thioredoxin   4 vltkenFeeevakekklvlvdFyApwCgpCkalaPeleelaeelkdkvklakvdvdenkdlaskyevegiPtlklfkngkkvekyegarekdelaafi 101
+                   lt+e+F++ v   +++++++FyApwC +C+a+aP ++++a+++k+k+ + +v+++ ++ l+++++v+g+Ptl++f++g+++ +yeg r   +l+++ 
+           17 290 PLTAETFQQRVTTTHDPWFIKFYAPWCHHCQAMAPSWHAMARDMKGKLNVGEVNCEVERRLCKDVNVKGYPTLIYFQAGERI-EYEGLRGLGDLISYA 386
+                  5899*****************************************************************************9.899999888888776 PP
+
+  == domain 3  score: 2.9 bits;  conditional E-value: 0.04
+                  EEEETTTSHHHHHHTT-SSSSEEEEEETTEE CS
+  Thioredoxin  54 akvdvdenkdlaskyevegiPtlklfkngkk 84 
+                  ak+  ++ + l ++y+++  P l++ ++gk 
+           17 442 AKLVKTKDPALSARYKISTWPRLIVSRDGKP 472
+                  66777899999*****************986 PP
+
+>> Thioredoxin_6  Thioredoxin-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0      0.34     8e+02     128     158 ..     160     188 ..     134     212 .. 0.59
+   2 !   12.1   0.0   5.6e-05      0.13      13     115 ..     327     429 ..     320     435 .. 0.81
+   3 !   28.8   0.0     4e-10   9.4e-07       6     123 ..     425     544 ..     421     555 .. 0.85
+   4 !    9.0   0.0   0.00049       1.1     125     166 ..     595     637 ..     567     649 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.34
+                    -EEEEEETTGGHHHHHHTT--GGG-SEEEEE CS
+  Thioredoxin_6 128 infvtadaksfkrlleylgvsssdlPviviv 158
+                    ++f+ +d+ +f+  ++  +++  ++P++v +
+             17 160 FKFAKIDCVAFGSACSDHNIN--SFPTVVQF 188
+                    456666666666666666555..55555522 PP
+
+  == domain 2  score: 12.1 bits;  conditional E-value: 5.6e-05
+                    HHHTTT-T.TSEEEEE-...-HHHHHHTT--S.SEEEEEETTTTEEEEEETHT--HHHHHHHHHHH---SEEE-SHHH.HHHHHTSS--EEEEEEE CS
+  Thioredoxin_6  13 ekaaeelkgdvrfgvvk...skevakklgike.pklllfrkfdekpvkydgekitvddlkkfieknslplvreltpen.aeelfeeglppllllfl 103
+                    +++a+++kg+  +g v+   +  ++k++++k+ p+l+ f +   ++++y+g      dl +  +k+     ++++ +  a e  e++ ++++l+f+
+             17 327 HAMARDMKGKLNVGEVNcevERRLCKDVNVKGyPTLIYFQA--GERIEYEGL-RGLGDLISYASKAVSAGDGVVDVDAaAFEALEKDEEVIFLYFY 419
+                    789*************9888888*****************9..45799***9.899********99999977777555466777888899999999 PP
+
+                    -TTSTTHHHHHH CS
+  Thioredoxin_6 104 kkddeeteklkk 115
+                    ++    t +  +
+             17 420 DHA--TTSEDFQ 429
+                    654..4444444 PP
+
+  == domain 3  score: 28.8 bits;  conditional E-value: 4e-10
+                    STHHHHHHHHTTT-T.TSEEEEE--HHHHHHTT--S.SEEEEEETTTTEEEEEETH....T--HHHHHHHHHHH---SEEE-SHHHHHHHHTSS-- CS
+  Thioredoxin_6   6 seeseifekaaeelkgdvrfgvvkskevakklgike.pklllfrkfdekpvkydge....kitvddlkkfieknslplvreltpenaeelfeeglp 96 
+                    se+++++e+   +l g+ + + +k++ + + ++i++ p l++ r+   kp+ y+      + ++ ++  +++ n lp v+elt+ na +++  +l 
+             17 425 SEDFQALERLLLSLIGHAKLVKTKDPALSARYKISTwPRLIVSRD--GKPTYYTPLsprdMRDFRKVLGWMQANWLPIVPELTSSNARDIMDHRLV 518
+                    6788899999999999999999********************999..344444433467899********************************55 PP
+
+                    EEEEEEE-TTSTTHHHHHHHHHHHHHH CS
+  Thioredoxin_6  97 pllllflkkddeeteklkkaieevake 123
+                     +l+++ ++ +e+   ++++++++a e
+             17 519 -VLAILNRERKEDFVIARRELKSAALE 544
+                    .88888888899999999999888855 PP
+
+  == domain 4  score: 9.0 bits;  conditional E-value: 0.00049
+                    TTT-EEEEEETTGGHHHHH.HTT--GGG-SEEEEEESSSS-EE CS
+  Thioredoxin_6 125 kgkinfvtadaksfkrlle.ylgvsssdlPvivivdsashkyk 166
+                    ++++ f+++d+  ++r l+  +g++  d+ ++vi d ++++y 
+             17 595 RKEVGFAWVDGVFWERWLKtTFGIDVKDGEKVVINDEDNQRYW 637
+                    56788**************9*************9997777764 PP
+
+>> Thioredoxin_2  Thioredoxin-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.3     1e-05     0.024      10     104 ..     110     205 ..     104     210 .. 0.62
+   2 !    9.7   0.1   0.00044         1       4      98 ..     303     375 ..     300     381 .. 0.73
+   3 ?    2.7   0.0     0.065   1.5e+02      38      90 ..     402     471 ..     390     482 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1e-05
+  Thioredoxin_2  10 vvftdpdCpyCkklkkelkelddvtvrvllfp...............lkpsfepkavaiwcakekkkafkdieenvelarkygvrgtPtiv.fldg 89 
+                    v f +p C  Ck++  + ++l   ++++   +               +++ +++k+++i+c +  +               ++++++Pt+v f dg
+             17 110 VEFFSPYCHHCKAFAPTWQTL---HEFYYTSDplpasnkessdslnsFTRYYDFKFAKIDCVAFGS-----------ACSDHNINSFPTVVqFKDG 191
+                    556777777777777766666...333222223445333333344444444555555555555553...........44456*******888**** PP
+
+  Thioredoxin_2  90 keivarlpGyvpaee 104
+                    k +v+r +G++p ++
+             17 192 K-EVERKVGALPMKD 205
+                    *.999*****99754 PP
+
+  == domain 2  score: 9.7 bits;  conditional E-value: 0.00044
+  Thioredoxin_2   4 ngkpvlvvftdpdCpyCkklkkelkel.ddvtvrvllfplkpsfepkavaiwcakekkkafkdieenvelarkygvrgtPtivfldgk..eivarl 96 
+                    ++ p ++ f++p+C  C+++      + +d + +             + ++ c+ e+            l + ++v+g Pt++++++       ++
+             17 303 THDPWFIKFYAPWCHHCQAMAPSWHAMaRDMKGK-----------LNVGEVNCEVERR-----------LCKDVNVKGYPTLIYFQAGerI---EY 373
+                    6778888899999999999999888874444444...........4566888888886...........999*********9977766333...34 PP
+
+  Thioredoxin_2  97 pG 98 
+                    +G
+             17 374 EG 375
+                    44 PP
+
+  == domain 3  score: 2.7 bits;  conditional E-value: 0.065
+  Thioredoxin_2  38 llfp.lkpsfepkavaiwcakekkkafkd...............ieenvelarkygvrgtPt.ivfldgk 90 
+                    ++f  l+++ e ++  ++  +  +++f++               +++  +l+ +y+++  P  iv  dgk
+             17 402 AAFEaLEKDEEVIFLYFYDHATTSEDFQAlerlllslighaklvKTKDPALSARYKISTWPRlIVSRDGK 471
+                    456677888888888888888888888889999999999999988888999999********77799*99 PP
+
+>> Thioredoxin_8  Thioredoxin-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.5   0.3   0.00096       2.2       5      30 ..     109     134 ..     107     194 .. 0.78
+   2 !   11.7   0.0   9.7e-05      0.23       5      41 ..     308     342 ..     305     371 .. 0.81
+   3 ?    1.1   0.0      0.19   4.5e+02      71      88 ..     449     466 ..     409     471 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00096
+                    EEEE--SSSHHHHHHHHHHHHHHHHH CS
+  Thioredoxin_8   5 lLyfgaswcppckaftpklkelyekl 30 
+                    l+ f++ +c++ckaf p+ + l+e +
+             17 109 LVEFFSPYCHHCKAFAPTWQTLHEFY 134
+                    678**************977777766 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 9.7e-05
+                    EEEE--SSSHHHHHHHHHHHHHHHHHHHTTSEEEEEE CS
+  Thioredoxin_8   5 lLyfgaswcppckaftpklkelyeklkkkkkveivyv 41 
+                    ++ f+a wc++c+a+ p+ +++ +++k   k+++  v
+             17 308 FIKFYAPWCHHCQAMAPSWHAMARDMK--GKLNVGEV 342
+                    578***********************9..66665444 PP
+
+  == domain 3  score: 1.1 bits;  conditional E-value: 0.19
+                    HHHHTT-S--TT-SEEEE CS
+  Thioredoxin_8  71 rnklkkkynvkaiPtlvv 88 
+                      +l  +y+++ +P+l+v
+             17 449 DPALSARYKISTWPRLIV 466
+                    4478999********887 PP
+
+>> Thioredoxin_7  Thioredoxin-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.1     0.041        95      21      36 ..     109     124 ..     104     129 .. 0.87
+   2 !   11.9   0.1   7.5e-05      0.18      12      36 ..     299     323 ..     292     365 .. 0.88
+   3 ?    0.7   0.0      0.24   5.5e+02       7      41 ..     401     437 ..     396     448 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.041
+                    EEEE--TT-HHHHHHH CS
+  Thioredoxin_7  21 LvdfgaswcftCqale 36 
+                    Lv f + +c++C+a++
+             17 109 LVEFFSPYCHHCKAFA 124
+                    899999********95 PP
+
+  == domain 2  score: 11.9 bits;  conditional E-value: 7.5e-05
+                    HHHHHT--EEEEE--TT-HHHHHHH CS
+  Thioredoxin_7  12 eaaerkkpvLvdfgaswcftCqale 36 
+                    +  +++ p ++ f a wc++Cqa++
+             17 299 RVTTTHDPWFIKFYAPWCHHCQAMA 323
+                    566788999*************985 PP
+
+  == domain 3  score: 0.7 bits;  conditional E-value: 0.24
+                    HHHHHHHHHHT--EEEEE..--TT-HHHHHHHHHHHH CS
+  Thioredoxin_7   7 eealaeaaerkkpvLvdf..gaswcftCqalerdvls 41 
+                    ++a++++++++  +++ f  +a+++++ qaler +ls
+             17 401 AAAFEALEKDEEVIFLYFydHATTSEDFQALERLLLS 437
+                    3455777788888899998999999999999998775 PP
+
+>> OST3_OST6  OST3 / OST6 family, transporter family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.2   0.4   0.00028      0.65      46     114 ..     117     198 ..     112     224 .. 0.79
+   2 !    4.8   0.0    0.0058        14      46     106 ..     316     369 ..     279     384 .. 0.85
+   3 ?   -2.2   0.0      0.82   1.9e+03      93     112 ..     654     674 ..     653     692 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 0.00028
+  OST3_OST6  46 Celcrefepefelvakswrkd...............ekskskklfFakvdfdegkdvFqklglnsaPhlllfppkkgpkkskkk 114
+                C+ c+ f+p ++++ + ++++               + +   +  Fak+d     +  ++ ++ns P ++ f+  k+ +  +k 
+         17 117 CHHCKAFAPTWQTLHEFYYTSdplpasnkessdslnSFTRYYDFKFAKIDCVAFGSACSDHNINSFPTVVQFKDGKEVE--RKV 198
+                *******************99******998888775334556788***************************9854433..344 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.0058
+  OST3_OST6  46 CelcrefepefelvakswrkdekskskklfFakvdfdegkdvFqklglnsaPhlllfppkk 106
+                C+ c+ ++p+++++a+ ++ +       l  ++v+ +  + + ++++++  P l++f++ +
+         17 316 CHHCQAMAPSWHAMARDMKGK-------LNVGEVNCEVERRLCKDVNVKGYPTLIYFQAGE 369
+                777777777777777666555.......899**************************9844 PP
+
+  == domain 3  score: -2.2 bits;  conditional E-value: 0.82
+  OST3_OST6  93 lnsaPhlllfppkkgpk.ksk 112
+                l+++P+++  ppk +pk k++
+         17 654 LETLPKVVASPPKISPKhKNS 674
+                789*********999995333 PP
+
+>> TraF  F plasmid transfer operon protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.5   0.0     0.022        51     128     157 ..     104     133 ..     100     137 .. 0.83
+   2 ?    7.1   0.0    0.0017         4     133     163 ..     308     338 ..     299     370 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.022
+  TraF 128 akeygLlfFyrsdcpyceaqapilqaladk 157
+           +k   L+ F+++ c  c+a+ap+ q l + 
+    17 104 SKGTWLVEFFSPYCHHCKAFAPTWQTLHEF 133
+           55566888****************999875 PP
+
+  == domain 2  score: 7.1 bits;  conditional E-value: 0.0017
+  TraF 133 LlfFyrsdcpyceaqapilqaladkyglevr 163
+           ++ Fy++ c  c+a+ap   a+a++++ ++ 
+    17 308 FIKFYAPWCHHCQAMAPSWHAMARDMKGKLN 338
+           567********************99854443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (746 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       577  (0.0353857); expected 326.1 (0.02)
+Passed bias filter:                      444  (0.0272292); expected 326.1 (0.02)
+Passed Vit filter:                        39  (0.00239176); expected 16.3 (0.001)
+Passed Fwd filter:                         7  (0.00042929); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 1.01u 0.18s 00:00:01.19 Elapsed: 00:00:00.50
+# Mc/sec: 4252.67
+//
+[ok]

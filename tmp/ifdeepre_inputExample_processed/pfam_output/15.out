@@ -1,0 +1,51 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/15.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       15  [L=276]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    4.6e-23   81.6   0.0    6.7e-23   81.0   0.0    1.2  1  NPCC      Nuclear pore complex component
+
+
+Domain annotation for each model (and alignments):
+>> NPCC  Nuclear pore complex component
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.0   0.0   4.1e-27   6.7e-23       1     129 [.      43     170 ..      43     171 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 81.0 bits;  conditional E-value: 4.1e-27
+  NPCC   1 GswenPvlkeilrRq.vnk..ErevkriiaNvllllvfnlikklvklll..klyelkkksseeslasalyaelveklirllfllniviallkLlrkqdkiaDlpL 100
+           G+w++P ++ei rR+ +++   ++v +i+ N+++l++f l   ++  ++   l++          ++  ya+++  l+r++ ++ni +al++L r  d+++D+ L
+    15  43 GTWRHPNMDEINRRKnASTfnSDNVHSILINLVALVSFLLAPGMLYSYTpsALIS-------FFHSMDPYASWAFILVRCVPVINIALALMPLARPTDDMTDIAL 140
+           9**************9999*99*******************99998888444444.......3334557************************************ PP
+
+  NPCC 101 tekQrellGLkad.esseeaaelvitqpry 129
+           t++Qr+llGL ++ +     ++ +it+pry
+    15 141 TREQRQLLGLTPQdAPLPAGSPGYITPPRY 170
+           *************75567899********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (276 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       384  (0.0235496); expected 326.1 (0.02)
+Passed bias filter:                      226  (0.0138599); expected 326.1 (0.02)
+Passed Vit filter:                        14  (0.00085858); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.58u 0.15s 00:00:00.73 Elapsed: 00:00:00.32
+# Mc/sec: 2429.78
+//
+[ok]

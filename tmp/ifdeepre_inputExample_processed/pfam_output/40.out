@@ -1,0 +1,101 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/40.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       40  [L=515]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.2e-79  267.7   0.0    1.4e-79  267.5   0.0    1.0  1  AMP-binding    AMP-binding enzyme
+    9.4e-17   61.6   0.0      3e-16   60.0   0.0    1.9  3  AMP-binding_C  AMP-binding enzyme C-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> AMP-binding  AMP-binding enzyme
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  267.5   0.0   1.8e-83   1.4e-79      17     423 .]       7     414 ..       1     414 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 267.5 bits;  conditional E-value: 1.8e-83
+                  GSTEEEEHHHHHHHHHHHHHHHHHTTSSTT-EEEEEESSSHHHHHHHHHHHHHT-EEEEEETTS-HHHHHHHHHHHT-SEEECC.TCGCCHHHHHHCC CS
+  AMP-binding  17 gegqtlTYreldervnrlAagLrslGvkkgdrVaillpnspewvvallailkaGavvvplnptltaeelayiledseakvliaetvdselleklleaa 114
+                  +  q+++ re ++ ++ l ag+r++G+k gd+V i   n +++ ++++ai  aG+v v  np++t+ el+++le s ak++i   ++ ell ++++ a
+           40   7 NPTQSISSREAWKLIRTLIAGFRHAGLKAGDCVCIHTFNFIHYPILVQAIIGAGGVFVGTNPAYTPTELRHALETSLAKFII---TEPELLRNIKQPA 101
+                  568999*****************99*********************************************************...8887766555555 PP
+
+                  SCS---TCEEEECECC-CCTHHCCHCCCSCHT.S--.............SCCCS-BTTSEEEEEEE--TTSS-EEEEEEHHHHHHHHHHHH.HHHH.S CS
+  AMP-binding 115 akleavklvivldadellkeeelkeeeeseekalek.............eeeeelkpddlayiiYTSGTTGkPKGVmlshrnlvanvaslk.lett.f 197
+                   +l  + + i l +        ++++++s+                    ++ee ++ + a+++++SGTTG PK+ ++sh nlva+   ++  +++ +
+           40 102 VALGIPGERIFLTNH-------ENIDAQSAMRP--WrtllehgqedwsqFDDEEKSKTTNAMLLFSSGTTGLPKATQISHYNLVAQHILVHeNPQHpD 190
+                  555555555544422.......22222222111..0122334555677756668999*****************************888765444432 PP
+
+                  TTTTT-EEEESS-TTSCHHHHHHHHHHHHHT-EEEE-SSCHC.CCHHHHHHHHHHHT-SEEEE-HHHHHHHHT.STTGT.H.HHHTCCSTT--EEEEE CS
+  AMP-binding 198 klkeddvvlsilplahifglilelllallsGatvvllpkdaa.ldpklllelieklkvtvlaavPrvlealle.sgalk.a.akkakdlsslrlvllg 291
+                  +      +++ lp++h+++  +  l +l +G  v ++++++  l     l  ie++++t l+ vP+++ a+++ s++     a+ ++ l+ +r v++g
+           40 191 R--YPVSMIMSLPMFHAAAAPYTHLSSLRAGYPVFVMRRFELsL----YLSSIERFGITSLMMVPSMVTAVIAySSSGPdLrAQVRQTLQFVRSVIVG 282
+                  2..24577899*****************************9844....59*******************9977655554345777778999******* PP
+
+                  SS--BHHHHHHHHHHHCT..EEEEEEE-CCGSSECEECHCTCTCTCTTS-BEEBTTEEEEEE-TTTSSBEETTSEEEEEEEETTS-SEETT-HHHHHH CS
+  AMP-binding 292 geplspellrffralfge..evlegYGlTEttgvvtvlpleedksklgsvGkplpgvevkivDeetgepvpdgeeGellvrgpgvmkgYlnkpeatae 387
+                  ++pls+e++ +++ l++e  ++ +++ ++Et++++++ +   d + +gsvG+ lpg+++k+vDe+ g + pdg  Gel+vrgp++++gY n+pea a+
+           40 283 AAPLSKETQARMQTLLPEqsPITQVWAMSETSCIASCTY-WPDFEHTGSVGRFLPGIDAKVVDES-GSEAPDGMRGELCVRGPTITRGYINNPEARAR 378
+                  *******************9***************7544.4445678*****************9.9999**************************** PP
+
+                  HEEETCCEEEEEEEEEEETT.SEEEEEEESSSEEEET CS
+  AMP-binding 388 afdsegrwlrTGDlgrlded.GyleivgRkkdliklr 423
+                   +d ++++++TGD+++ d+     ++v+Rkk+lik+r
+           40 379 DWD-QDGYFHTGDIVYQDQStELWYVVDRKKELIKVR 414
+                  **9.867**********9872557789********96 PP
+
+>> AMP-binding_C  AMP-binding enzyme C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.9   0.0         2   1.6e+04      41      55 ..      72      86 ..      62      89 .. 0.70
+   2 ?   -3.6   0.0         2   1.6e+04      38      52 ..     262     273 ..     250     277 .. 0.63
+   3 !   60.0   0.0   3.7e-20     3e-16       1      74 []     422     497 ..     422     497 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -3.9 bits;  conditional E-value: 2
+                   -HHHHHHHHHHT-TT CS
+  AMP-binding_C 41 aeeLkahvrkelgpy 55
+                   + eL++ ++++l+++
+             40 72 PTELRHALETSLAKF 86
+                   479999999998886 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 2
+                    ----HHHHHHHHHHT CS
+  AMP-binding_C  38 gaeaeeLkahvrkel 52 
+                    g    +L+a+vr++l
+             40 262 G---PDLRAQVRQTL 273
+                    3...47899998876 PP
+
+  == domain 3  score: 60.0 bits;  conditional E-value: 3.7e-20
+                    HHHHHHHSSTTEEEEEEE-----TTS---EEEEEE----.--HHHHHHHHHHT-TTT.S-SEEEE-S---B-TTS- CS
+  AMP-binding_C   1 evEsalvehpaVaeaaVvGvpdevkGealvafVvlkdga.eaeeLkahvrkelgpya.vpkkvvfvdelpktrsGK 74 
+                    e+E+alv+hp V+++aV+Gv+   +Ge + a+V+ kd++ ++ +Lk + +++l++y+     v+fvd++p+++sGK
+             40 422 EIEAALVSHPLVQDVAVIGVDGGEDGELPRAYVIRKDNTlSESDLKVWSAERLAKYKwLTGGVKFVDQIPRNASGK 497
+                    8**********************************9887556**************84666**************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (515 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       465  (0.0285171); expected 326.1 (0.02)
+Passed bias filter:                      439  (0.0269226); expected 326.1 (0.02)
+Passed Vit filter:                        33  (0.00202379); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.72u 0.20s 00:00:00.92 Elapsed: 00:00:00.38
+# Mc/sec: 3816.80
+//
+[ok]

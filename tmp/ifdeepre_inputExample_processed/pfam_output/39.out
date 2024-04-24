@@ -1,0 +1,67 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/39.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       39  [L=387]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    0.00028   20.9   0.1    0.00055   20.0   0.1    1.5  1  Arylesterase  Arylesterase
+     0.0035   16.8   0.0       0.64    9.4   0.0    2.2  2  SGL           SMP-30/Gluconolaconase/LRE-like region
+
+
+Domain annotation for each model (and alignments):
+>> Arylesterase  Arylesterase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.0   0.1   6.7e-08   0.00055       8      84 ..     188     267 ..     181     269 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 20.0 bits;  conditional E-value: 6.7e-08
+                   TTEEEEEES-S--...SHHHHHHHHHTT---EEEEEE-SS.-EEEEEEEESSEEEEEE-TTSSEEEEEETTTTEEEEEEE- CS
+  Arylesterase   8 pdsfyatndhyFg...dnfllllemslqlawtavvYysps.evkvvasglssanGInidadkkyiyvadilresihvmkkh 84 
+                     +  +tndh+F+   ++ l ++e++l+l  ++v + + + e   +++++ +anGI +   +  + va++   +++ ++  
+            39 188 ATEVLVTNDHFFTpkgSKLLNMVETYLGLPLGGVTHVDLKtEEAAQVARVAFANGIAVVN-ESAVAVASSASAKVFLYNID 267
+                   566789******63337899999*************996526678899*********965.56899**********99865 PP
+
+>> SGL  SMP-30/Gluconolaconase/LRE-like region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.2   0.0    0.0015        12      96     137 ..      80     124 ..      75     142 .. 0.77
+   2 !    9.4   0.0   7.8e-05      0.64      87     168 ..     179     271 ..     129     292 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.0015
+  SGL  96 dGr.lwfGtmgdeeakgeevgalyrldpd..gklervlddltipN 137
+          +Gr +w ++mg++ +++ ++g+ly +d +  +   ++++ l+ pN
+   39  80 EGRdVWNTVMGIFGKTQPKNGELYLYDYSrpSPSLETIRLLNTPN 124
+          5777**********************9885333445555555555 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 7.8e-05
+  SGL  87 rfNDgvvdpdGrlwfGtmgdeeakgeev............galyrldpdgklervlddltipNGlawspdgktlYlaDsltrkiwaydvdaegg 168
+           +N +v  ++ ++ ++  ++++ kg +             g++ ++d +++   ++ +++++NG+a+ ++ + + +a s+  k++ y++d+++ 
+   39 179 APNAVVQISATEVLVTNDHFFTPKGSKLlnmvetylglplGGVTHVDLKTEEAAQVARVAFANGIAVVNE-SAVAVASSASAKVFLYNIDKSSA 271
+          5555566666666666666666666655666666777788*********9999999**********9876.566779************98875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (387 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       399  (0.0244695); expected 326.1 (0.02)
+Passed bias filter:                      368  (0.0225684); expected 326.1 (0.02)
+Passed Vit filter:                        24  (0.00147185); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.65u 0.16s 00:00:00.81 Elapsed: 00:00:00.33
+# Mc/sec: 3318.69
+//
+[ok]

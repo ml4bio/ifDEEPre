@@ -1,0 +1,151 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/18.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       18  [L=458]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.1e-15   57.2   1.7    2.7e-15   55.9   0.3    2.3  2  Sec20            Sec20
+  ------ inclusion threshold ------
+      0.071   13.5   1.5        9.2    6.7   0.2    2.7  2  NPV_P10          Nucleopolyhedrovirus P10 protein
+      0.089   12.6   0.0       0.17   11.6   0.0    1.5  1  Polysacc_deac_1  Polysaccharide deacetylase
+        1.4    9.0   5.1        5.3    7.2   0.6    2.8  2  Tower            Tower
+        5.5    5.3   9.9        9.1    4.6   9.9    1.3  1  FUSC             Fusaric acid resistance protein family
+        6.3    5.9  12.7         26    3.9  11.9    2.1  2  DUF4407          Domain of unknown function (DUF4407)
+
+
+Domain annotation for each model (and alignments):
+>> Sec20  Sec20
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.1      0.63   1.7e+03      43      64 ..       8      29 ..       4      33 .. 0.81
+   2 !   55.9   0.3   9.8e-19   2.7e-15       3      92 .]     194     283 ..     192     283 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.63
+  Sec20 43 eeykqvedvlsrskklvkkler 64
+           + + q++d+++ + +l++ l +
+     18  8 DALSQLSDSIKLTFQLISRLSK 29
+           6678999999999999998876 PP
+
+  == domain 2  score: 55.9 bits;  conditional E-value: 9.8e-19
+  Sec20   3 akqiTeslraisqllsqevqqSeenleeldastkslekleeeykqvedvlsrskklvkklerrdktdkllvflalglflacvvyvvkkRi 92 
+            + ++T +lr+ ++ll +e  +S  + e+ld+st  l +l e y++++++ls sk+l+  l r++k+d   +  a+ +++ ++ ++v++R+
+     18 194 STDVTSALRRTHNLLTSELSRSRFAQETLDQSTAALADLGERYTDLDSLLSNSKNLLGALVRSQKSDTWYLETAFYILVTTICWLVFRRL 283
+            679**************************************************************************************7 PP
+
+>> NPV_P10  Nucleopolyhedrovirus P10 protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.2    0.0034       9.2       9      33 ..      53      77 ..      50     112 .. 0.72
+   2 ?    4.9   0.1     0.012        34      26      66 ..     204     244 ..     190     251 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.0034
+  NPV_P10  9 IradikavddkVdalqqqvddvqen 33
+             Ir++ k+ dd +d+l q+++dv e 
+       18 53 IRDALKHHDDTLDSLRQEIEDVVEF 77
+             9******************999764 PP
+
+  == domain 2  score: 4.9 bits;  conditional E-value: 0.012
+  NPV_P10  26 qvddvqenlpdvtelnekLdaqsaqLaeletkvenIqdiLn 66 
+                + ++++l      +e Ld+ +a+La+l +  ++ +++L+
+       18 204 THNLLTSELSRSRFAQETLDQSTAALADLGERYTDLDSLLS 244
+              555566666666667899********************998 PP
+
+>> Polysacc_deac_1  Polysaccharide deacetylase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   6.3e-05      0.17      46     103 ..      62     120 ..       6     139 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 6.3e-05
+                      H-HHHHHHHHHTTEEEEE--SS--.EGGGSHHHHHHHHHHHHHHHHHHHHS----EEE- CS
+  Polysacc_deac_1  46 dypdevremaasGveignHtinhs.nlkrlseeevrreierakdalrkalgreprlfry 103
+                      d  d +r+  ++ ve+g H+  +   lk+ ++++++++++r ++ l++ ++++p l  y
+               18  62 DTLDSLRQEIEDVVEFGTHSQRRRdSLKDRERARIAAQLARLDEDLKQYVHDDPSLHEY 120
+                      4468889999999*******8876266999999******************98887655 PP
+
+>> Tower  Tower
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.2   0.6     0.002       5.3      25      41 ..     144     160 ..     127     161 .. 0.81
+   2 ?    2.7   0.3     0.048   1.3e+02      16      31 ..     442     457 ..     438     458 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 7.2 bits;  conditional E-value: 0.002
+  Tower  25 aeaqqkklEiLfaKIqa 41 
+            ++a+qk+ EiLfa +q+
+     18 144 EAAKQKEREILFASLQQ 160
+            478**********9885 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.048
+  Tower  16 aEekeArkyaeaqqkk 31 
+            +E+ eA k+++++ ++
+     18 442 EEDVEAPKHQMRKRDE 457
+            799*********9876 PP
+
+>> FUSC  Fusaric acid resistance protein family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   9.9    0.0033       9.1     160     316 ..      65     214 ..      49     280 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.0033
+  FUSC 160 arlrallrdalelaaallsgeegaeareaararlaadilalealrsqaayesprirararalrrllsrmlallallsslarllarlraeeaaevpe.laallael 263
+           ++lr+ ++d++e+ + + +++++ ++  ++rar+aa++++l++ ++q + ++p++++ +        +  ++ +++++ +   +r +++ ++ ++e l a l++ 
+    18  65 DSLRQEIEDVVEFGTHSQRRRDSLKD--RERARIAAQLARLDEDLKQYVHDDPSLHEYVT------DKSYSARSQFRAAQLSSKRASEAAKQKEREiLFASLQQP 161
+           56777777888887777777777777..7*************************776655......555555555555555555555555555444455555555 PP
+
+  FUSC 264 aaleaaaaaealeaelaalrarlaalrpsle...adadtaaallarlaellaelaq 316
+            +   +++++ +++ laa r + ++l +++    a++d   al ++   l +el +
+    18 162 TE---TDSTSSTPDPLAARRPQSKQLTQDELlinASTDVTSALRRTHNLLTSELSR 214
+           55...333333333333333333333333333442222222222222222222222 PP
+
+>> DUF4407  Domain of unknown function (DUF4407)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.7   0.5     0.022        59     174     223 ..      35     104 ..       6     119 .. 0.57
+   2 ?    3.9  11.9    0.0097        26     117     260 ..      82     249 ..      67     256 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 2.7 bits;  conditional E-value: 0.022
+  DUF4407 174 gttgvaGkgpaake....kkaqldaaqaelaelkakld................atarlaalraelaele 223
+              g t  +G+g++  e     +++l+  + +l++l+++++                ++ ++a+  a+la+l+
+       18  35 GSTPLQGDGDVRIElshdIRDALKHHDDTLDSLRQEIEdvvefgthsqrrrdslKDRERARIAAQLARLD 104
+              5555666666555544445666666666666666666666666666433333332222222222332222 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.0097
+  DUF4407 117 qeeakelkeqlaaaltaelaeleaqia..............................alqaeidaaearldalraeaqkeldgtkgtgttgvaGkgpaakek 188
+              q++ ++lk++ +a   a+la+l+++++                              + +a  +a++++++ l a +q+ ++ ++++ t+       aa++ 
+       18  82 QRRRDSLKDRERARIAAQLARLDEDLKqyvhddpslheyvtdksysarsqfraaqlsSKRASEAAKQKEREILFASLQQPTETDSTSSTP---DPL-AARRP 179
+              444555666666665566666666666555555555555555555444444444333777777777777777777777777755544433...332.33333 PP
+
+  DUF4407 189 kaqldaaqaelaelkakldatarlaalraelaeleaerakeraasqaaaaaddGllarlealdrltkedata 260
+              +++  ++++ l +++++   t++l +  + l++  ++ + ++++ ++++aa ++l++r++ ld l ++++ +
+       18 180 QSKQLTQDELLINASTD--VTSALRRTHNLLTSELSRSRFAQETLDQSTAALADLGERYTDLDSLLSNSKNL 249
+              33333333333333444..7888888888888888888888999999******************9988754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (458 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       978  (0.0599779); expected 326.1 (0.02)
+Passed bias filter:                      415  (0.0254508); expected 326.1 (0.02)
+Passed Vit filter:                        46  (0.00282105); expected 16.3 (0.001)
+Passed Fwd filter:                         7  (0.00042929); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.74u 0.21s 00:00:00.95 Elapsed: 00:00:00.39
+# Mc/sec: 3306.28
+//
+[ok]

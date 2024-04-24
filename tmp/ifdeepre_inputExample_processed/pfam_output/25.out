@@ -1,0 +1,81 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/25.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       25  [L=543]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.4e-74  250.3   0.0    5.9e-55  186.4   0.0    2.1  2  AMP-binding    AMP-binding enzyme
+    7.1e-14   52.4   0.1    1.5e-13   51.4   0.1    1.6  1  AMP-binding_C  AMP-binding enzyme C-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> AMP-binding  AMP-binding enzyme
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.8   0.0   4.8e-21   3.9e-17      18     112 ..      47     139 ..      39     166 .. 0.85
+   2 !  186.4   0.0   7.2e-59   5.9e-55     175     422 ..     189     426 ..     188     427 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 61.8 bits;  conditional E-value: 4.8e-21
+                  STEEEEHHHHHHHHHHHHHHHH.HTTSSTT-EEEEEESSSHHHHHHHHHHHHHT-EEEEEETTS-HHHHHHHHHHHT-SEEECC.TCGCCHHHHHH CS
+  AMP-binding  18 egqtlTYreldervnrlAagLr.slGvkkgdrVaillpnspewvvallailkaGavvvplnptltaeelayiledseakvliaetvdselleklle 112
+                  +g++l+Y ++++++++l+ +L  +++ k+gd+V ++++ns+ + va++a+l++G+vv+  +p+++ ee+ y+l+ s+ak+l+   ++ e l  + e
+           25  47 TGHSLSYLDVKDKATALSTALVnHHNFKPGDTVILFSQNSIWYPVAMFAVLRVGGVVSGASPAYGVEEMIYALKTSGAKFLM---THPERLGVAVE 139
+                  6789******************99**********************************************************...55555322223 PP
+
+  == domain 2  score: 186.4 bits;  conditional E-value: 7.2e-59
+                  EEEEEEHHHHHHHHHHHHHHHH.STTTTT-EEEESS-TTSCHHHHHHHHHHHHHT-EEEE-SSCHCCCHHHHHHHHHHHT-SEEEE-HHHHHHHHTST CS
+  AMP-binding 175 KGVmlshrnlvanvaslklett.fklkeddvvlsilplahifglilelllallsGatvvllpkdaaldpklllelieklkvtvlaavPrvleallesg 271
+                  K Vm+sh+n++a++ ++ l+ t  +l   d++l++lpl+hi+gl+  l l++l  a+v++lp ++ ++   +l +++k+k+  l +vP +l +l++++
+           25 189 KHVMISHQNVIAQCLQM-LKITpPDL---DRILAVLPLFHITGLVHILHLPILLNAQVIMLPSFSMPT---MLSTVTKYKIKELLLVPPLLIRLVRDP 279
+                  78**************8.56563334...9********************************999833...58***********************98 PP
+
+                  TGTHHHHTCCSTT--EEEEESS--BHHHHHHHHHHHCT.EEEEEEE-CCGSSECEE.CHCTCTCTCTTS-BEEBTTEEEEEE-TTTSSBEETTSEEEE CS
+  AMP-binding 272 alkaakkakdlsslrlvllggeplspellrffralfge.evlegYGlTEttgvvtv.lpleedksklgsvGkplpgvevkivDeetgepvpdgeeGel 367
+                  + +    ++dls ++ + +g++pls+e+l+ ++++f++  + +gYG+TE + ++t  +p + + +++  vGk++  + +ki+ e+ g++ + +e+Ge+
+           25 280 EVD----NHDLSCIERFSSGAAPLSEEILQLLQKKFPNtGFKQGYGMTESCSCITGhPPSHYSYKYAHAVGKIVSSTSIKIIREN-GKEAGINEPGEI 372
+                  888....77****999999*******************88**************76677788889999***************99.99999******* PP
+
+                  EEEETTS-SEETT-HHHHHHHEEETCCEEEEEEEEEEETTSEEEEEEESSSEEEE CS
+  AMP-binding 368 lvrgpgvmkgYlnkpeataeafdsegrwlrTGDlgrldedGyleivgRkkdlikl 422
+                  l +gp++++gYln++ at+e++d ++++l+TGD g ++e+G l i++R+k++ik+
+           25 373 LAKGPQITMGYLNNDTATKETYD-QEGYLHTGDQGSVNEEGLLTITDRIKEMIKV 426
+                  **********************9.647***************************8 PP
+
+>> AMP-binding_C  AMP-binding enzyme C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.4   0.1   1.9e-17   1.5e-13       1      74 []     435     514 ..     435     514 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 51.4 bits;  conditional E-value: 1.9e-17
+                    HHHHHHHSSTTEEEEEEE-----TTS---EEEEEE----...--...HHHHHHHHHHT-TTTS-SEEEE-S---B-TTS- CS
+  AMP-binding_C   1 evEsalvehpaVaeaaVvGvpdevkGealvafVvlkdga...ea...eeLkahvrkelgpyavpkkvvfvdelpktrsGK 74 
+                    e+E  l+ h  V+++a+ Gvpd  +Ge ++afVvlk+++   e+   ++L ++vr++   y+  ++v+fvd +pk  sGK
+             25 435 ELEDLLLGHGLVEDVAILGVPDTYTGEKPKAFVVLKTNSvgtEEavgRKLLDYVRERKIRYKWLAEVEFVDVVPKSPSGK 514
+                    89*********************************976545433689********************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (543 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       275  (0.016865); expected 326.1 (0.02)
+Passed bias filter:                      255  (0.0156384); expected 326.1 (0.02)
+Passed Vit filter:                        23  (0.00141052); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.65u 0.23s 00:00:00.88 Elapsed: 00:00:00.36
+# Mc/sec: 4311.61
+//
+[ok]

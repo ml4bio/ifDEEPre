@@ -1,0 +1,135 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/34.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       34  [L=512]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.8e-86  290.2   0.0    2.2e-86  289.9   0.0    1.1  1  AMP-binding    AMP-binding enzyme
+    3.6e-15   56.6   0.0    1.1e-14   55.0   0.0    1.9  1  AMP-binding_C  AMP-binding enzyme C-terminal domain
+    0.00015   20.7   0.0     0.0023   16.8   0.0    2.1  2  GH3            GH3 auxin-responsive promoter
+     0.0015   18.5   0.1     0.0033   17.4   0.1    1.5  1  RTX_C          RTX C-terminal domain
+  ------ inclusion threshold ------
+      0.049   12.5   0.0      0.077   11.9   0.0    1.2  1  PRMT5          PRMT5 arginine-N-methyltransferase
+
+
+Domain annotation for each model (and alignments):
+>> AMP-binding  AMP-binding enzyme
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  289.9   0.0   6.9e-90   2.2e-86      11     421 ..      14     407 ..       5     409 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 289.9 bits;  conditional E-value: 6.9e-90
+                  SEEEEE..GSTEEEEHHHHHHHHHHHHHHHHHTTSSTT-EEEEEESSSHHHHHHHHHHHHHT-EEEEEETTS-HHHHHHHHHHHT-SEEE.....CC. CS
+  AMP-binding  11 kvalvd..gegqtlTYreldervnrlAagLrslGvkkgdrVaillpnspewvvallailkaGavvvplnptltaeelayiledseakvli.....ae. 100
+                  ++a++       t++Y++l + + ++   L +lG+++ + V i lpn++ ++va+la++   ++++plnp++++ e ++ ++d ++ +++     a+ 
+           34  14 DTAIIVpgSPALTVSYEQLTADILSFQLKLAKLGITPASAVSIALPNTYPFIVAFLATAWQRGIAAPLNPAYKQSEFEFYIDDLKSALVLvpqglADg 111
+                  55555556667799****************************************************************************55332113 PP
+
+                  ..TCGCCHHHHHHCCSCS---TCEEEECECC-C...CTHHCCHCCCSCHT.S--SCCCS-BTTSEEEEEEE--TTSS-EEEEEEHHHHHHHHHHHHHH CS
+  AMP-binding 101 .tvdselleklleaaakleavklvivldadell...keeelkeeeeseekalekeeeeelkpddlayiiYTSGTTGkPKGVmlshrnlvanvaslkle 194
+                   +        +++a+++  av++++   ++ +l   +e +lk++ +        +  e ++pdd+a+++ TSGTTG+PK+V lsh+nl+ +++++k  
+           34 112 pA--------VKAAQKYNAAVAECYWNGKEVVLdikDEGKLKGKGN--------KSIEYAQPDDVALVLHTSGTTGRPKAVPLSHKNLTRTMSNIK-- 191
+                  32........333333333333333333222220002333333332........246679**********************************86.. PP
+
+                  HHSTTTTT-EEEESS-TTSCHHHHHHHHHHHHHT-EEEE-SSCHCCCHHHHHHHHHHHT-SEEEE-HHHHHHHHTSTTGTHHHHTCCSTT--EEEEES CS
+  AMP-binding 195 ttfklkeddvvlsilplahifglilelllallsGatvvllpkdaaldpklllelieklkvtvlaavPrvleallesgalkaakkakdlsslrlvllgg 292
+                   t +l++ d+ + ++pl+h+ gl ++ l++llsG++vv++ k++a d   ++++++++k++  +avP++ + ll+s++++       l+ +r++ ++ 
+           34 192 ATYELTSADRTMLVMPLFHVHGLLAGFLAPLLSGGSVVVPAKFSASD---FWRDFTTHKANWYTAVPTIHQILLKSPTPS------PLPNIRFIRSCS 280
+                  44667789***********************************9965...5699999*******************9999......9*********** PP
+
+                  S--BHHHHHHHHHHHCTEEEEEEE-CCGSSECEE..CHCTCTCTCTTS-BEEBTTEEEEEE-TTTSSBEETTSEEEEEEEETTS-SEETT-HHHHHHH CS
+  AMP-binding 293 eplspellrffralfgeevlegYGlTEttgvvtv..lpleedksklgsvGkplpgvevkivDeetgepvpdgeeGellvrgpgvmkgYlnkpeataea 388
+                  +plsp++ ++++++f+ +vle+Y +TE+++ +t   lp ++ k+++gsvG    gvevki+D++ g++v +g e e+++rg++v+ gYln+pea++ +
+           34 281 SPLSPKVFHELEKTFKAPVLEAYAMTEAAHQMTSnpLP-HKGKRQPGSVGVG-QGVEVKILDQA-GKEVSQGSEAEICIRGENVTTGYLNNPEANKTS 375
+                  ********************************876544.444478999**99.9*********9.999****************************** PP
+
+                  EEETCCEEEEEEEEEEETTSEEEEEEESSSEEE CS
+  AMP-binding 389 fdsegrwlrTGDlgrldedGyleivgRkkdlik 421
+                  f++e +++rTGD g+ d+dGy+ i+gR+k+li+
+           34 376 FTAE-GFFRTGDQGKQDKDGYVIITGRIKELIN 407
+                  *955.7*************************96 PP
+
+>> AMP-binding_C  AMP-binding enzyme C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.0   0.0   3.5e-18   1.1e-14       1      74 []     417     492 ..     417     492 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 55.0 bits;  conditional E-value: 3.5e-18
+                    HHHHHHHSSTTEEEEEEE-----TTS---EEEEEE-----..-HHHHHHHHHHT-TTTS-SEEEE-S---B-TTS- CS
+  AMP-binding_C   1 evEsalvehpaVaeaaVvGvpdevkGealvafVvlkdgae..aeeLkahvrkelgpyavpkkvvfvdelpktrsGK 74 
+                    e+ ++ ++hpaV+ea+ +++ d++ G+ + + +vlkd+++  +++Lk+++++++++++ pkk+ f+d +pkt++GK
+             34 417 ELDNVMAQHPAVSEAVSFAIADDMYGQDVGVAIVLKDNQKlqPADLKSWMAERVAKFKLPKKIFFTDIMPKTATGK 492
+                    7899**********************99999999998874325********************************9 PP
+
+>> GH3  GH3 auxin-responsive promoter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.0   6.9e-07    0.0023      73     115 ..     157     197 ..     146     215 .. 0.84
+   2 ?    1.6   0.0     0.027        89     393     443 ..     398     444 ..     395     473 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 6.9e-07
+          SS--SEEEEEEEEETTEEEEEEESHHHHHHHHHH.HHHHHHHH CS
+  GH3  73 sepitlfalsSGTtsgksKliPvteeslkelallvlallaall 115
+          ++ + l + +SGTt g++K +P ++++l +++   +++ ++l+
+   34 157 PDDVALVLHTSGTT-GRPKAVPLSHKNLTRTMSN-IKATYELT 197
+          57889999******.***************9987.77777766 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.027
+          EEEETTEEE-SSS--EEHHHHHHHHH.HHHHHTT-EEEEEEEEE.E-S.SS CS
+  GH3 393 FvgRknvvlsidgeklteeelqkaveeaakeltglelvdftsfaedtsese 443
+          ++gR +++++  gek++  el++++++  +     e v f++ a d+  ++
+   34 398 ITGRIKELINKGGEKISPIELDNVMAQHPAV---SEAVSFAI-ADDMYGQD 444
+          789***********************66554...57788888.65666444 PP
+
+>> RTX_C  RTX C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.4   0.1     1e-06    0.0033      67     123 ..     391     447 ..     389     456 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 17.4 bits;  conditional E-value: 1e-06
+  RTX_C  67 gkdGeritsqqvdeLiakgngkisaeelskvinnknkleeklsssesynllkqkknl 123
+            +kdG  i+   + eLi+kg++kis+ el +v+ ++  ++e +s++ + ++  q  ++
+     34 391 DKDGYVIITGRIKELINKGGEKISPIELDNVMAQHPAVSEAVSFAIADDMYGQDVGV 447
+            89**************************************99999988888776555 PP
+
+>> PRMT5  PRMT5 arginine-N-methyltransferase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   2.4e-05     0.077      18      79 ..     441     503 ..     433     509 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 2.4e-05
+            T-TTEEEEEEE-SS-.-GHHHHCCCCCTTEEEEEEECGG-EESTTT-EE--HHHHHHHHHHH- CS
+  PRMT5  18 yssklkvaLelpkel.pskevlerwlaEpvkllllsssifltnkkgypvLskalqellkrllr 79 
+            y + + va+ l+++   + + l+ w+aE+v+ + l+++if+t+   ++   k +++++++ + 
+     34 441 YGQDVGVAIVLKDNQkLQPADLKSWMAERVAKFKLPKKIFFTDIMPKTATGKIQRRMVAEAML 503
+            55778899999966547889***********************99999999999999888774 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (512 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       438  (0.0268613); expected 326.1 (0.02)
+Passed bias filter:                      408  (0.0250215); expected 326.1 (0.02)
+Passed Vit filter:                        23  (0.00141052); expected 16.3 (0.001)
+Passed Fwd filter:                         5  (0.000306636); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.74u 0.19s 00:00:00.93 Elapsed: 00:00:00.38
+# Mc/sec: 3814.18
+//
+[ok]

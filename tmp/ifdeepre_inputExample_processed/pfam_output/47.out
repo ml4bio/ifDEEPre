@@ -1,0 +1,51 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/47.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       47  [L=229]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.4e-55  186.6   8.3    2.9e-55  186.3   8.3    1.1  1  EBP       Emopamil binding protein
+
+
+Domain annotation for each model (and alignments):
+>> EBP  Emopamil binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  186.3   8.3   1.8e-59   2.9e-55       1     172 [.      34     213 ..      34     215 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 186.3 bits;  conditional E-value: 1.8e-59
+  EBP   1 sllaalavllaalllskrllpkskskkdrllfiWfafdaliHlilEGsflynk......qsllaqlwkeYakaDsRyatadltvvslelltvllagplallvvyai 100
+          +++ ++a++ +++l+ k+++p+   +++ l+++Wf+++++iHl++EG+f+yn+      q++++qlwkeYa++DsRy+t++++v ++e+ t++l+gpl+++v+++i
+   47  34 FVAGCIAIFGLTYLAVKKVNPRLP-TSELLTVMWFVLCGCIHLFFEGYFAYNNanlgglQTFFGQLWKEYALSDSRYLTQNTFVFCVEATTAVLWGPLSFVVAVLI 138
+          57889**************99843.5899************************999999999******************************************** PP
+
+  EBP 101 akrkplrhllqivlataelyGgvlyfatewle...gslnldtseplylWvylvffNalWvviPllllvesvkeik 172
+          a ++plrh+lq ++++++ yG++ly+at++ +    +++++++e++y+W y++++N++W+viP +ll++s+++ +
+   47 139 AIDHPLRHPLQAAVSLGQCYGDMLYYATSMADyyyLGIEYSRPEAYYFWGYYFGANFFWIVIPGVLLYNSIRTSA 213
+          *****************************99999899*********************************98765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (229 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       489  (0.029989); expected 326.1 (0.02)
+Passed bias filter:                      261  (0.0160064); expected 326.1 (0.02)
+Passed Vit filter:                        23  (0.00141052); expected 16.3 (0.001)
+Passed Fwd filter:                         1  (6.13271e-05); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.44u 0.15s 00:00:00.59 Elapsed: 00:00:00.26
+# Mc/sec: 2459.04
+//
+[ok]

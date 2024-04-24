@@ -1,0 +1,77 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/6.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       6  [L=251]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.5e-30  104.8   0.0    5.7e-30  104.4   0.0    1.0  1  FSH1           Serine hydrolase (FSH1)
+  ------ inclusion threshold ------
+       0.14   11.8   0.5        1.3    8.6   0.1    2.5  2  Abhydrolase_2  Phospholipase/Carboxylesterase
+
+
+Domain annotation for each model (and alignments):
+>> FSH1  Serine hydrolase (FSH1)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  104.4   0.0   6.9e-34   5.7e-30       5     211 ..      14     235 ..      10     236 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 104.4 bits;  conditional E-value: 6.9e-34
+  FSH1   5 kkiLcLhGytqsgeiFraktsalrkllkklnvelvyldaplelaekadlpkseseeeekseeeeesraWfrkkdekneyegleesldavkdyike...ngpfdGi 106
+           ++iLcLhG + ++eiF+ + ++l k+l    ++lv+ d+p+ + + + +  +        e+  ++r W+ + ++ ++   +ee + a++ + +    +gp++G+
+     6  14 PRILCLHGGGVTAEIFQLQARSLIKALPT--FRLVFADGPFYCPPGPGIVPV-------YEDYGPFRRWLPEHADIDDEAAIEEVMYAIETCKSGdpgTGPWVGL 109
+           69**************************5..************888888777.......99************99777777777666665544435559****** PP
+
+  FSH1 107 iGFSqGaalaallaslleellkea..shpslkfailvsGfkleepk...................yeeyy...eedkiqtptLhvlGelDtvvdeerseaLaeaf 187
+           +GFSqGa laa l+ +++  +++    ++ +kfa+l++G ++  +                        y   +e+ +++pt+hv+G +D+      +++L++++
+     6 110 MGFSQGAKLAASLLYDQQVRKEKIgvAETAYKFAVLLAGRQPLMQLseysvgpatlgageisegfK---YegpNEHVLRLPTIHVHGLNDAGLH--LHRDLMRKY 209
+           **************99997665448899999**********9666567777877777777655440...345457888***************9..999999999 PP
+
+  FSH1 188 kns..skvlkHpggHfvPnkkeyvda 211
+           ++    ++++++g+H vP kk  vd+
+     6 210 CHPdaVTLVEWDGTHRVPLKKTDVDK 235
+           888899***************99987 PP
+
+>> Abhydrolase_2  Phospholipase/Carboxylesterase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.1   0.00016       1.3     106     128 ..     106     128 ..       7     140 .. 0.59
+   2 ?   -0.1   0.1     0.078   6.3e+02      18      46 ..     189     218 ..     177     229 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.00016
+  Abhydrolase_2 106 riiigGFSqGaalalylaltlpk 128
+                     + ++GFSqGa la  l + ++ 
+              6 106 WVGLMGFSQGAKLAASLLYDQQV 128
+                    56799********9988887765 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.078
+  Abhydrolase_2  18 iflHGlGdsg.hawaeaakteaalpnikfi 46 
+                    i +HGl d g h+  + ++  ++ + ++++
+              6 189 IHVHGLNDAGlHLHRDLMRKYCHPDAVTLV 218
+                    567888888877777777666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (251 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       291  (0.0178462); expected 326.1 (0.02)
+Passed bias filter:                      276  (0.0169263); expected 326.1 (0.02)
+Passed Vit filter:                        30  (0.00183981); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.45u 0.16s 00:00:00.61 Elapsed: 00:00:00.27
+# Mc/sec: 2616.62
+//
+[ok]

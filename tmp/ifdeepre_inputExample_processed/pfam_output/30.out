@@ -1,0 +1,53 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/30.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       30  [L=266]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.1e-25   87.2   0.0    1.4e-24   86.4   0.0    1.4  1  NUDIX     NUDIX domain
+
+
+Domain annotation for each model (and alignments):
+>> NUDIX  NUDIX domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   86.4   0.0   8.8e-29   1.4e-24       2     131 .]      87     234 ..      86     234 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 86.4 bits;  conditional E-value: 8.8e-29
+            EEEEEEEEEEETTSEEEEEEES..SSSTTT.E....E.SS.......EEECBTTS.HHHHHHHHHHHHHHSEEEEEE.....EEEEEEEEEEEEEEEEEEEEEE CS
+  NUDIX   2 lrravgvvllnekgevLlvrrs..kkpfpg.W....e.lP.......gGkvepgE.tpeeAArREleEEtGleaell.....ellgrlhylapydgpygdehei 84 
+            l+ra++v+l+++k+++Ll++r+  k +fp+ W    + +P       g ++e     ++ AA+R+l  E+G++a+++     ++l+r+hy+ap+dg++g ehei
+     30  87 LHRAFSVFLFDNKNRLLLQQRAseKITFPDmWtntcCsHPlgvpgetGSTLETAImGVKRAAQRKLDQELGIKAHQVpldkfHFLTRIHYVAPSDGKWG-EHEI 189
+            79*****************************99886468866666666667778889999************9999999999*****************.9*** PP
+
+            EEEEEEEECSGCSSTTTTTEEEEEEEEHHHHHHHHTHCTHHHHHHHH CS
+  NUDIX  85 lyvfleevegelepndenevsevrwvpleellkeklaaesrkllpwl 131
+            +y+++ +++ +l+ n +nev++ ++v+ + l k++++++s  ++pw+
+     30 190 DYILFIKADVDLAEN-PNEVQATKYVTEDHL-KTMFKDDSLLFTPWF 234
+            **************9.***************.*************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (266 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       487  (0.0298663); expected 326.1 (0.02)
+Passed bias filter:                      445  (0.0272906); expected 326.1 (0.02)
+Passed Vit filter:                        29  (0.00177849); expected 16.3 (0.001)
+Passed Fwd filter:                         1  (6.13271e-05); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.58u 0.17s 00:00:00.75 Elapsed: 00:00:00.32
+# Mc/sec: 2372.57
+//
+[ok]

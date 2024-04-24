@@ -1,0 +1,92 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/13.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       13  [L=464]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+  ------ inclusion threshold ------
+      0.011   15.8   0.0      0.051   13.7   0.0    2.1  2  DHH       DHH family
+       0.19   11.8   0.7        2.8    8.0   0.0    2.9  4  DUF4262   Domain of unknown function (DUF4262)
+
+
+Domain annotation for each model (and alignments):
+>> DHH  DHH family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0      0.42   3.4e+03      40      58 ..      14      32 ..       8      57 .. 0.74
+   2 ?   13.7   0.0   6.3e-06     0.051       4      59 ..      69     161 ..      66     204 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.42
+         HHCCCSEEEEEEE-S---S CS
+         xxxxxxxxxxxxxxxxxxx RF
+  DHH 40 eakeeaedviiiDHHrlge 58
+         + k++ +++++ D+H  ++
+   13 14 ATKRSRARLEVPDYHLTPS 32
+         457888999999***9875 PP
+
+  == domain 2  score: 13.7 bits;  conditional E-value: 6.3e-06
+          EE.ECSSSHHHHHHHHHHHH......................................EECECS--TCGGCGCCHHCCCSEEEEEEE-S---S....S CS
+          xxxxxxxxxxxxxxxxxxxx......................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx....x RF
+  DHH   4 ivghknpDtDsigSalalan......................................llllvDhnekaqavdgeakeeaedviiiDHHrlge....p 59 
+          i  + + D+D++ S + l++                                      +++++D ++++      +++   + ++iDHH        +
+   13  69 I--VPDKDADGLSSGVILHRtlvllglnpelirvhllskgqtvhhehereamaalfpdYIFVLDQGSRKSGP---LIAAPHTGLVIDHHHATPedfpE 161
+          4..6899*******7777773444444444444444444444444444444444444444566666555444...68999999*****9986454331 PP
+
+>> DUF4262  Domain of unknown function (DUF4262)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0      0.21   1.7e+03      36      63 ..      87     114 ..      81     129 .. 0.79
+   2 ?   -3.0   0.0      0.88   7.1e+03      46      66 ..     228     247 ..     225     276 .. 0.69
+   3 ?    8.0   0.0   0.00034       2.8      67     126 ..     287     345 ..     260     346 .. 0.79
+   4 ?   -0.4   0.0      0.14   1.1e+03      41      77 ..     385     421 ..     384     437 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.21
+  DUF4262  36 ElivfGlppelahalLneladrvreger 63 
+               l+++Gl+pel +  L + ++ v+++++
+       13  87 TLVLLGLNPELIRVHLLSKGQTVHHEHE 114
+              5899999999999999888888886554 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 0.88
+  DUF4262  46 lahalLneladrvregerlle 66 
+               ++++Ln++++ v + +r+ +
+       13 228 YTKKALNDVVSYVNAPRRT-A 247
+              5678899999998888773.3 PP
+
+  == domain 3  score: 8.0 bits;  conditional E-value: 0.00034
+  DUF4262  67 ggqleddvlegypvklreveesayeeylgvAnafygdedvpalQlvwpDreGrfPwepgy 126
+               ++++ ++ ++ +v + +++ s+ + + ++A+++ g+ + +al +v+  +eG +P++ ++
+       13 287 CTHTAPRFSQDGKVAVFKIK-SEAQVHPVIATRWAGHLQSKALEIVMVANEGYLPGKVNF 345
+              33334567788999999999.899*******************************98776 PP
+
+  == domain 4  score: -0.4 bits;  conditional E-value: 0.14
+  DUF4262  41 GlppelahalLneladrvregerlleggqleddvleg 77 
+              Glp +    lL++l+d++++g+    gg +++d +e+
+       13 385 GLPDQHEIPLLERLGDDFARGHVQASGGIVDVDQFEE 421
+              67777777899**********9999999988665654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (464 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       316  (0.0193794); expected 326.1 (0.02)
+Passed bias filter:                      296  (0.0181528); expected 326.1 (0.02)
+Passed Vit filter:                        23  (0.00141052); expected 16.3 (0.001)
+Passed Fwd filter:                         2  (0.000122654); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.72u 0.21s 00:00:00.93 Elapsed: 00:00:00.38
+# Mc/sec: 3475.22
+//
+[ok]

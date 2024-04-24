@@ -1,0 +1,115 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             ../tmp/ifdeepre_inputExample_processed/pfam_input/0.fasta
+# target HMM database:             ../database/pfam/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       0  [L=682]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.4e-82  276.6   0.0    2.9e-82  276.4   0.0    1.1  1  AMP-binding    AMP-binding enzyme
+    2.3e-15   56.1   0.7    2.3e-15   56.1   0.7    1.9  2  ACAS_N         Acetyl-coenzyme A synthetase N-terminus
+    4.4e-14   53.1   0.1    1.4e-13   51.5   0.0    1.9  2  AMP-binding_C  AMP-binding enzyme C-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> AMP-binding  AMP-binding enzyme
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  276.4   0.0   5.4e-86   2.9e-82       6     422 ..      76     541 ..      70     542 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 276.4 bits;  conditional E-value: 5.4e-86
+                  HHSTTSEEEEE.....GSTEEEEHHHHHHHHHHHHHHHHHTTSSTT-EEEEEESSSHHHHHHHHHHHHHT-EEEEEETTS-HHHHHHHHHHHT-SEEE CS
+  AMP-binding   6 aktpdkvalvd.....gegqtlTYreldervnrlAagLrslGvkkgdrVaillpnspewvvallailkaGavvvplnptltaeelayiledseakvli 98 
+                  a + +++a+++     +++++++Y++l e+v  lA +Lr+ Gvkkgd+V+i++p+ p  +v +la+l++Ga+++++  +++a+ la+ +++s++kv++
+            0  76 AGNGERTAIIWdspvtNTQEKISYAQLAEEVATLAGVLREEGVKKGDVVLIYMPMIPAALVGVLATLRLGAIHAVVFGGFSAPSLAQRIDASKPKVVL 173
+                  567799***99*****99*********************88********************************************************* PP
+
+                  ......CC........TCGCCHHHHHHCCSCS---TCEEEECECC-CCTHHCCHCCCSCHT.S--........SCCCS-BTTSEEEEEEE--TTSS-E CS
+  AMP-binding  99 ......ae.......tvdselleklleaaakleavklvivldadellkeeelkeeeeseekalek........eeeeelkpddlayiiYTSGTTGkPK 175
+                        +        +    l+  +  +++++++++++iv ++++++  + +ke+ e + ++l+k        +e++++k+++++yiiYTSGTTG PK
+            0 174 tascgiEGskgplpyQ---PLVRGA--IEQSKHKSSKTIVWQREQSRWDDIEKENGERNWQRLVKsarnrglkAENVPIKSNEPIYIIYTSGTTGAPK 266
+                  8666551145665421...222222..223334455566666666666655555554443333336788899988889******************** PP
+
+                  EEEEEHHHHHHHHHHHHHHHHSTTTTT-EEEESS-TTSCHHHHHHHHHHHHHT-EEEE-SSCHC.CC.HHHHHHHHHHHT-SEEEE-HHHHHHHHT.S CS
+  AMP-binding 176 GVmlshrnlvanvaslklettfklkeddvvlsilplahifglilelllallsGatvvllpkdaa.ld.pklllelieklkvtvlaavPrvlealle.s 270
+                  GV  + +  +  +  + +++ f++k++dv+++  ++ +++g+++ ++++ll+Gat vl+++ +  ++ ++++++++e++kv+v++++P++l+a+ + +
+            0 267 GVLREAGGHAVGLNFC-MRHLFGIKAGDVMFCASDIGWVVGHSFIIFAPLLVGATTVLFEGKPIgTPdAGTFWRCVEQHKVNVMFTAPTALRAIRReD 363
+                  ******8887775554.7888999*************************************999877799999*********************8878 PP
+
+                  TTGT.H..HHHTCCSTT--EEEEESS--BHHHHHHHHHHHCT......EEEEEEE-CCGSSECEE...............CHCTCTCTCTTS-BEEBT CS
+  AMP-binding 271 galk.a..akkakdlsslrlvllggeplspellrffralfge......evlegYGlTEttgvvtv...............lpleedksklgsvGkplp 344
+                  g+ k +    ++  l slr ++l+ge+ +p+++  + +l+ +      +v++ ++ +E +  +t                +  +  ++k+gs+Gkp+p
+            0 364 GKHKfFieRGEKDGLRSLRALFLAGERSEPAVVNDYTQLLQKygapgaAVVDNWWSSESGSPMTGlaqlpsswhaggeesV--KPLATKPGSAGKPMP 459
+                  77774475444447888***99******************99*****99************99666778888999999542..455578********* PP
+
+                  TEEEEEE-TTTSSBEETTSEEEEEEEET...TS-SEETT-HHHHHHHEEE..TCCEEEEEEEEEEETTSEEEEEEESSSEEEE CS
+  AMP-binding 345 gvevkivDeetgepvpdgeeGellvrgp...gvmkgYlnkpeataeafds..egrwlrTGDlgrldedGyleivgRkkdlikl 422
+                  g  +++vD++ g++vp+g++G ++++ p   + +   ++++++    +    +grw  TGD g +d+dGy++i gR++d+i++
+            0 460 GFNIRVVDDD-GNEVPQGKTGNIVLGMPlapTGFTTLWKDEKRFYNGYMLrfKGRWIDTGDAGIIDKDGYVHIHGRSDDMINV 541
+                  *********9.9**************99655788888998776665554344478**************************97 PP
+
+>> ACAS_N  Acetyl-coenzyme A synthetase N-terminus
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.1   0.7   4.2e-19   2.3e-15       2      55 .]       8      69 ..       7      69 .. 0.83
+   2 ?   -3.7   0.0         2   1.1e+04      13      31 ..     335     355 ..     333     369 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 56.1 bits;  conditional E-value: 4.2e-19
+            HHHHHHHHH-HHHHHHHHHHH---SB--S-SBSS.........-SBT--BSTT-EE-HHHHH CS
+  ACAS_N  2 kelyreSiedpeaFWaeqaeeldWekpfdkvldgs........kgpfikWFeGGklNicyNc 55
+            ++ y+ +++ pe+FWa+ a++l+W  p++++++ +        +++++kWF++G+++++yNc
+       0  8 DAAYAAALDSPETFWAHEAKHLSWAVPPKTIIENTtktlqsgtEHQHWKWFPDGEISTSYNC 69
+            789**************************76644433333333677**************** PP
+
+  == domain 2  score: -3.7 bits;  conditional E-value: 2
+             HHHHHHHHHH.--.-SB--S- CS
+  ACAS_N  13 eaFWaeqaee.ld.Wekpfdk 31 
+              +FW+ + ++ ++  ++ +++
+       0 335 GTFWRCVEQHkVNvMFTAPTA 355
+             578887766554423555555 PP
+
+>> AMP-binding_C  AMP-binding enzyme C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.5   0.0   2.6e-17   1.4e-13       2      74 .]     551     631 ..     550     631 .. 0.88
+   2 ?   -2.1   0.0       1.3   7.2e+03      40      56 ..     660     676 ..     641     680 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 51.5 bits;  conditional E-value: 2.6e-17
+                    HHHHHHSSTTEEEEEEE-----TTS---EEEEEE----....--...HHHHHHHHHHT-TTTS-SEEEE-S-.--B-TTS- CS
+  AMP-binding_C   2 vEsalvehpaVaeaaVvGvpdevkGealvafVvlkdga....ea...eeLkahvrkelgpyavpkkvvfvde.lpktrsGK 74 
+                    +E+a+++hp +++ +V+  pd++kG+++ afV l++ a    ea   ++++++vr+++gp+a+   v++ +  +p+trsGK
+              0 551 LEQAISSHPSITDNCVIPAPDPLKGHVPFAFVALSPSAgtipEAellAAINSRVRAAVGPIATLGGVIIAQGvIPRTRSGK 631
+                    7********************************96543335422689*********************99755*******9 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 1.3
+                    --HHHHHHHHHHT-TTT CS
+  AMP-binding_C  40 eaeeLkahvrkelgpya 56 
+                    e+ e+++++rk + +y 
+              0 660 EDVEVVERARKVIKTYF 676
+                    34789999999988885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (682 residues searched)
+Target model(s):                       16306  (2860830 nodes)
+Passed MSV filter:                       399  (0.0244695); expected 326.1 (0.02)
+Passed bias filter:                      351  (0.0215258); expected 326.1 (0.02)
+Passed Vit filter:                        33  (0.00202379); expected 16.3 (0.001)
+Passed Fwd filter:                         3  (0.000183981); expected 0.2 (1e-05)
+Initial search space (Z):              16306  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.79u 0.18s 00:00:00.97 Elapsed: 00:00:00.40
+# Mc/sec: 4860.88
+//
+[ok]
