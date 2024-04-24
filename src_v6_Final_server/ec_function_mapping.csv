@@ -1,0 +1,59 @@
+0.0.-.-,Non-enzyme
+1.1.-.-,Oxidoreductases,Acting on the CH-OH group of donors
+1.2.-.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors
+1.3.-.-,Oxidoreductases,Acting on the CH-CH group of donors
+1.4.-.-,Oxidoreductases,Acting on the CH-NH2 group of donors
+1.5.-.-,Oxidoreductases,Acting on the CH-NH group of donors
+1.6.-.-,Oxidoreductases,Acting on NADH or NADPH
+1.7.-.-,Oxidoreductases,Acting on other nitrogenous compounds as donors
+1.8.-.-,Oxidoreductases,Acting on a sulfur group of donors
+1.9.-.-,Oxidoreductases,Acting on a heme group of donors
+1.10.-.-,Oxidoreductases,Acting on diphenols and related substances as donors
+1.11.-.-,Oxidoreductases,Acting on a peroxide as acceptor
+1.12.-.-,Oxidoreductases,Acting on hydrogen as donor
+1.13.-.-,Oxidoreductases,Acting on single donors with incorporation of molecular oxygen (oxygenases)
+1.14.-.-,Oxidoreductases,Acting on paired donors, with incorporation or reduction of molecular oxygen
+1.15.-.-,Oxidoreductases,Acting on superoxide as acceptor
+1.16.-.-,Oxidoreductases,Oxidizing metal ions
+1.17.-.-,Oxidoreductases,Acting on CH or CH2 groups
+1.18.-.-,Oxidoreductases,Acting on iron-sulfur proteins as donors
+1.20.-.-,Oxidoreductases,Acting on reduced flavodoxin as donor
+1.21.-.-,Oxidoreductases,Acting on X-H and Y-H to form an X-Y bond
+1.97.-.-,Oxidoreductases,Other Oxidoreductases
+2.1.-.-,Transferases,Transferring One-Carbon Groups
+2.2.-.-,Transferases,Transferring Aldehyde or Ketonic Groups
+2.3.-.-,Transferases,Acyltransferases
+2.4.-.-,Transferases,Glycosyltransferases
+2.5.-.-,Transferases,Transferring Alkyl or Aryl Groups; Other than Methyl Groups
+2.6.-.-,Transferases,Transferring Nitrogenous Groups
+2.7.-.-,Transferases,Transferring Phosphorus-Containing Groups
+2.8.-.-,Transferases,Transferring Sulfur-Containing Groups
+2.9.-.-,Transferases,Transferring Selenium-Containing Groups
+2.10.-.-,Transferases,Transferring molybdenum- or tungsten-containing groups
+3.1.-.-,Hydrolases,Acting on Ester Bonds
+3.2.-.-,Hydrolases,Glycosylases
+3.3.-.-,Hydrolases,Acting on Ether Bonds
+3.4.-.-,Hydrolases,Peptidase
+3.5.-.-,Hydrolases,Acting on carbon-nitrogen bonds; Other than peptide bonds
+3.6.-.-,Hydrolases,Acting on acid anhydrides
+3.7.-.-,Hydrolases,Acting on carbon-carbon bonds
+3.8.-.-,Hydrolases,Acting on halide bonds
+3.11.-.-,Hydrolases,Acting on carbon-phosphorus bonds
+4.1.-.-,Lyases,Carbon-Carbon Lyases
+4.2.-.-,Lyases,Carbon-Oxygen Lyases
+4.3.-.-,Lyases,Carbon-Nitrogen Lyases
+4.4.-.-,Lyases,Carbon-Sulfur Lyases
+4.6.-.-,Lyases,Phosphorus-Oxygen Lyases
+4.99.-.-,Lyases,Other Lyases
+5.1.-.-,Isomerases,Epimerases and racemases
+5.2.-.-,Isomerases,Cis-trans-Isomerases
+5.3.-.-,Isomerases,Intramolecular Oxidoreductases
+5.4.-.-,Isomerases,Intramolecular Transferases
+5.5.-.-,Isomerases,Intramolecular Lyases
+5.99.-.-,Isomerases,Other Isomerases
+6.1.-.-,Ligases,Forming Carbon-Oxygen Bonds
+6.2.-.-,Ligases,Forming Carbon-Sulfur Bonds
+6.3.-.-,Ligases,Forming Carbon-Nitrogen Bonds
+6.4.-.-,Ligases,Forming Carbon-Carbon Bonds
+6.5.-.-,Ligases,Forming Phosphoric Ester Bonds
+6.6.-.-,Ligases,Forming Nitrogen-Metal Bonds

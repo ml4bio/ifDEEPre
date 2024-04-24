@@ -1,0 +1,262 @@
+0.0.0.-,Non-enzyme
+1.1.1.-,Oxidoreductases,Acting on the CH-OH group of donors,With NAD or NADP as acceptor
+1.1.2.-,Oxidoreductases,Acting on the CH-OH group of donors,With a cytochrome as acceptor
+1.1.3.-,Oxidoreductases,Acting on the CH-OH group of donors,With oxygen as acceptor
+1.1.4.-,Oxidoreductases,Acting on the CH-OH group of donors,With a disulfide as acceptor
+1.1.5.-,Oxidoreductases,Acting on the CH-OH group of donors,With a quinone or similar compound as acceptor
+1.1.9.-,Oxidoreductases,Acting on the CH-OH group of donors,With a copper protein as acceptor
+1.1.98.-,Oxidoreductases,Acting on the CH-OH group of donors,With other known physiological acceptors
+1.1.99.-,Oxidoreductases,Acting on the CH-OH group of donors,With unknown physiological acceptors
+1.2.1.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With NAD or NADP as acceptor
+1.2.2.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With a cytochrome as acceptor
+1.2.3.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With oxygen as acceptor
+1.2.4.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With a disulfide as acceptor
+1.2.5.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With a quinone or similar compound as acceptor
+1.2.7.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With an iron-sulfur protein as acceptor
+1.2.98.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With other known physiological acceptors
+1.2.99.-,Oxidoreductases,Acting on the aldehyde or oxo group of donors,With other physiological acceptors
+1.3.1.-,Oxidoreductases,Acting on the CH-CH group of donors,With NAD or NADP as acceptor
+1.3.2.-,Oxidoreductases,Acting on the CH-CH group of donors,With a cytochrome as acceptor
+1.3.3.-,Oxidoreductases,Acting on the CH-CH group of donors,With oxygen as acceptor
+1.3.4.-,Oxidoreductases,Acting on the CH-CH group of donors,With a disulfide as acceptor
+1.3.5.-,Oxidoreductases,Acting on the CH-CH group of donors,With a quinone or related compound as acceptor
+1.3.7.-,Oxidoreductases,Acting on the CH-CH group of donors,With an iron-sulfur protein as acceptor
+1.3.8.-,Oxidoreductases,Acting on the CH-CH group of donors,With flavin as acceptor
+1.3.98.-,Oxidoreductases,Acting on the CH-CH group of donors,With other known physiological acceptors
+1.3.99.-,Oxidoreductases,Acting on the CH-CH group of donors,With unknown physiological acceptors
+1.4.1.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With NAD or NADP as acceptor
+1.4.2.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With a cytochrome as acceptor
+1.4.3.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With oxygen as acceptor
+1.4.4.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With a disulfide as acceptor
+1.4.5.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With a quinone or similar compound as acceptor
+1.4.7.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With an iron-sulfur protein as acceptor
+1.4.9.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With a copper protein as acceptor
+1.4.98.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With other known physiological acceptors
+1.4.99.-,Oxidoreductases,Acting on the CH-NH2 group of donors,With unknown physiological acceptors
+1.5.1.-,Oxidoreductases,Acting on the CH-NH group of donors,With NAD or NADP as acceptor
+1.5.3.-,Oxidoreductases,Acting on the CH-NH group of donors,With oxygen as acceptor
+1.5.4.-,Oxidoreductases,Acting on the CH-NH group of donors,With a disulfide as acceptor
+1.5.5.-,Oxidoreductases,Acting on the CH-NH group of donors,With a quinone or similar compound as acceptor
+1.5.7.-,Oxidoreductases,Acting on the CH-NH group of donors,With an iron-sulfur protein as acceptor
+1.5.8.-,Oxidoreductases,Acting on the CH-NH group of donors,With a flavin as acceptor
+1.5.98.-,Oxidoreductases,Acting on the CH-NH group of donors,With other known physiological acceptors
+1.5.99.-,Oxidoreductases,Acting on the CH-NH group of donors,With unknown physiological acceptors
+1.6.1.-,Oxidoreductases,Acting on NADH or NADPH,With NAD or NADP as acceptor
+1.6.2.-,Oxidoreductases,Acting on NADH or NADPH,With a heme protein as acceptor
+1.6.3.-,Oxidoreductases,Acting on NADH or NADPH,With oxygen as acceptor
+1.6.4.-,Oxidoreductases,Acting on NADH or NADPH,With a disulfide as acceptor
+1.6.5.-,Oxidoreductases,Acting on NADH or NADPH,With a quinone or similar compound as acceptor
+1.6.6.-,Oxidoreductases,Acting on NADH or NADPH,With a nitrogenous group as acceptor
+1.6.7.-,Oxidoreductases,Acting on NADH or NADPH,With a iron-sulfur protein as acceptor
+1.6.8.-,Oxidoreductases,Acting on NADH or NADPH,With a flavin as acceptor
+1.6.99.-,Oxidoreductases,Acting on NADH or NADPH,With unknown physiological acceptors
+1.7.1.-,Oxidoreductases,Acting on other nitrogenous compounds as donors,With NAD+ or NADP+ as acceptor
+1.7.2.-,Oxidoreductases,Acting on other nitrogenous compounds as donors,With a cytochrome as acceptor
+1.7.3.-,Oxidoreductases,Acting on other nitrogenous compounds as donors,With oxygen as acceptor
+1.7.5.-,Oxidoreductases,Acting on other nitrogenous compounds as donors,With a quinone or similar compound as acceptor
+1.7.6.-,Oxidoreductases,Acting on other nitrogenous compounds as donors,With a nitrogenous group as acceptor
+1.7.7.-,Oxidoreductases,Acting on other nitrogenous compounds as donors,With an iron-sulfur protein as acceptor
+1.7.99.-,Oxidoreductases,Acting on other nitrogenous compounds as donors,With unknown physiological acceptors
+1.8.1.-,Oxidoreductases,Acting on a sulfur group of donors,With NAD or NADP as acceptor
+1.8.2.-,Oxidoreductases,Acting on a sulfur group of donors,With a cytochrome as acceptor
+1.8.3.-,Oxidoreductases,Acting on a sulfur group of donors,With oxygen as acceptor
+1.8.4.-,Oxidoreductases,Acting on a sulfur group of donors,With a disulfide as acceptor
+1.8.5.-,Oxidoreductases,Acting on a sulfur group of donors,With a quinone or similar compound as acceptor
+1.8.6.-,Oxidoreductases,Acting on a sulfur group of donors,With an nitrogenous group as acceptor
+1.8.7.-,Oxidoreductases,Acting on a sulfur group of donors,With an iron-sulfur protein as acceptor
+1.8.98.-,Oxidoreductases,Acting on a sulfur group of donors,With other known physiological acceptors
+1.8.99.-,Oxidoreductases,Acting on a sulfur group of donors,With unknown physiological acceptors
+1.9.3.-,Oxidoreductases,Acting on a heme group of donors,With oxygen as acceptor
+1.10.2.-,Oxidoreductases,Acting on diphenols and related substances as donors,With a cytochrome as acceptor
+1.10.3.-,Oxidoreductases,Acting on diphenols and related substances as donors,With oxygen as acceptor
+1.10.5.-,Oxidoreductases,Acting on diphenols and related substances as donors,With a quinone or related compound as acceptor
+1.10.9.-,Oxidoreductases,Acting on diphenols and related substances as donors,With a copper protein as acceptor
+1.11.1.-,Oxidoreductases,Acting on a peroxide as acceptor,Peroxidases
+1.11.2.-,Oxidoreductases,Acting on a peroxide as acceptor,With H2O2 as acceptor; one oxygen atom of which is incorporated into the product
+1.12.1.-,Oxidoreductases,Acting on hydrogen as donor,With NAD or NADP as acceptor
+1.12.2.-,Oxidoreductases,Acting on hydrogen as donor,With a cytochrome as acceptor
+1.12.5.-,Oxidoreductases,Acting on hydrogen as donor,With a quinone or similar compound as acceptor
+1.12.7.-,Oxidoreductases,Acting on hydrogen as donor,With an iron-sulfur protein as acceptor
+1.12.98.-,Oxidoreductases,Acting on hydrogen as donor,With other known physiological acceptors
+1.12.99.-,Oxidoreductases,Acting on hydrogen as donor,With unknown physiological acceptors
+1.13.11.-,Oxidoreductases,Acting on single donors with incorporation of molecular oxygen (oxygenases),With incorporation of two atoms of oxygen
+1.13.12.-,Oxidoreductases,Acting on single donors with incorporation of molecular oxygen (oxygenases),With incorporation of one atom of oxygen (internal monooxygenases or internal mixed function oxidases)
+1.13.99.-,Oxidoreductases,Acting on single donors with incorporation of molecular oxygen (oxygenases),Miscellaneous
+1.14.11.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With 2-oxoglutarate as one donor and incorporation of one atom each of oxygen into both donors
+1.14.12.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With NADH or NADPH as one donor and incorporation of two atoms of oxygen into one donor
+1.14.13.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With NADH or NADPH as one dono and incorporation of one atom of oxygen
+1.14.14.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With reduced flavin or flavoprotein as one donor and incorporation of one atom of oxygen
+1.14.15.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With reduced iron-sulfur protein as one donor and incorporation of one atom of oxygen
+1.14.16.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With reduced pteridine as one donor and incorporation of one atom of oxygen
+1.14.17.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With reduced ascorbate as one donor and incorporation of one atom of oxygen
+1.14.18.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With another compound as one donor and incorporation of one atom of oxygen
+1.14.19.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With oxidation of a pair of donors resulting in the reduction of molecular oxygen to two molecules of water
+1.14.20.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With 2-oxoglutarate as one donor and the other dehydrogenated
+1.14.21.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,With NADH or NADPH as one donor and the other dehydrogenated
+1.14.99.-,Oxidoreductases,Acting on paired donors with incorporation or reduction of molecular oxygen,Miscellaneous
+1.15.1.-,Oxidoreductases,Acting on superoxide as acceptor,Acting on superoxide as acceptor
+1.16.1.-,Oxidoreductases,Oxidizing metal ions,With NAD or NADP as acceptor
+1.16.3.-,Oxidoreductases,Oxidizing metal ions,With oxygen as acceptor
+1.16.5.-,Oxidoreductases,Oxidizing metal ions,With quinone or similar compound as acceptor
+1.16.8.-,Oxidoreductases,Oxidizing metal ions,With flavin as acceptor
+1.16.9.-,Oxidoreductases,Oxidizing metal ions,With a copper protein as acceptor
+1.16.98.-,Oxidoreductases,Oxidizing metal ions,With other known physiological acceptor
+1.17.1.-,Oxidoreductases,Acting on CH or CH2 groups,With NAD or NADP as acceptor
+1.17.2.-,Oxidoreductases,Acting on CH or CH2 groups,With a cytochrome as acceptor
+1.17.3.-,Oxidoreductases,Acting on CH or CH2 groups,With oxygen as acceptor
+1.17.4.-,Oxidoreductases,Acting on CH or CH2 groups,With a disulfide as acceptor
+1.17.5.-,Oxidoreductases,Acting on CH or CH2 groups,With a quinone or similar compound as acceptor
+1.17.7.-,Oxidoreductases,Acting on CH or CH2 groups,With an iron-sulfur protein as acceptor
+1.17.8.-,Oxidoreductases,Acting on CH or CH2 groups,With a flavin as acceptor physiological acceptors
+1.17.99.-,Oxidoreductases,Acting on CH or CH2 groups,With unknown physiological acceptors
+1.18.1.-,Oxidoreductases,Acting on iron-sulfur proteins as donors,With NAD+ or NADP+ as acceptor
+1.18.2.-,Oxidoreductases,Acting on iron-sulfur proteins as donors,With dinitrogen as acceptor (transferred to EC 1.18.6)
+1.18.3.-,Oxidoreductases,Acting on iron-sulfur proteins as donors,With H+ as acceptor
+1.18.6.-,Oxidoreductases,Acting on iron-sulfur proteins as donors,With dinitrogen as acceptor
+1.18.96.-,Oxidoreductases,Acting on iron-sulfur proteins as donors,With other known physiological acceptors
+1.18.99.-,Oxidoreductases,Acting on iron-sulfur proteins as donors,With H+ as acceptor
+1.20.1.-,Oxidoreductases,Acting on reduced flavodoxin as donor,With NAD+ or NADP+ as acceptor
+1.20.2.-,Oxidoreductases,Acting on reduced flavodoxin as donor,With a cytochrome as acceptor
+1.20.4.-,Oxidoreductases,Acting on reduced flavodoxin as donor,With disulfide as acceptor
+1.20.9.-,Oxidoreductases,Acting on reduced flavodoxin as donor,With a copper protein as acceptor
+1.20.98.-,Oxidoreductases,Acting on reduced flavodoxin as donor,With other known physiological acceptors
+1.20.99.-,Oxidoreductases,Acting on reduced flavodoxin as donor,With unknown physiological acceptors
+1.21.1.-,Oxidoreductases,Acting on X-H and Y-H to form an X-Y bond,With NAD+ or NADP+ as acceptor
+1.21.3.-,Oxidoreductases,Acting on X-H and Y-H to form an X-Y bond,With oxygen as acceptor
+1.21.4.-,Oxidoreductases,Acting on X-H and Y-H to form an X-Y bond,With a disulfide as acceptor
+1.21.98.-,Oxidoreductases,Acting on X-H and Y-H to form an X-Y bond,With other known physiological acceptors
+1.21.99.-,Oxidoreductases,Acting on X-H and Y-H to form an X-Y bond,With unknown physiological acceptors
+1.97.1.-,Oxidoreductases,Other Oxidoreductases,Other Oxidoreductases
+2.1.1.-,Transferases,Transferring One-Carbon Groups,Methyltransferases
+2.1.2.-,Transferases,Transferring One-Carbon Groups,Hydroxymethyl- Formyl- and Related Transferases
+2.1.3.-,Transferases,Transferring One-Carbon Groups,Carboxy- and Carbamoyltransferases
+2.1.4.-,Transferases,Transferring One-Carbon Groups,Amidinotransferases
+2.2.1.-,Transferases,Transferring Aldehyde or Ketonic Groups,Transketolases and Transaldolases
+2.3.1.-,Transferases,Acyltransferases,Transferring groups other than amino-acyl groups
+2.3.2.-,Transferases,Acyltransferases,Aminoacyltransferases
+2.3.3.-,Transferases,Acyltransferases,Acyl groups converted into alkyl on transfer
+2.4.1.-,Transferases,Glycosyltransferases,Hexosyltransferases
+2.4.2.-,Transferases,Glycosyltransferases,Pentosyltransferases
+2.4.99.-,Transferases,Glycosyltransferases,Transferring Other Glycosyl Groups
+2.5.1.-,Transferases,Transferring Alkyl or Aryl Groups; Other than Methyl Groups,Transferring Alkyl or Aryl Groups; Other than Methyl Groups
+2.6.1.-,Transferases,Transferring Nitrogenous Groups,Transaminases
+2.6.2.-,Transferases,Transferring Nitrogenous Groups,Amidinotransferases
+2.6.3.-,Transferases,Transferring Nitrogenous Groups,Oximinotransferases
+2.6.99.-,Transferases,Transferring Nitrogenous Groups,Transferring Other Nitrogenous Groups
+2.7.1.-,Transferases,Transferring Phosphorus-Containing Groups,Phosphotransferases with an alcohol group as acceptor
+2.7.2.-,Transferases,Transferring Phosphorus-Containing Groups,Phosphotransferases with a carboxy group as acceptor
+2.7.3.-,Transferases,Transferring Phosphorus-Containing Groups,Phosphotransferases with a nitrogenous group as acceptor
+2.7.4.-,Transferases,Transferring Phosphorus-Containing Groups,Phosphotransferases with a phosphate group as acceptor
+2.7.5.-,Transferases,Transferring Phosphorus-Containing Groups,Phosphotransferases with regeneration of donors; apparently catalysing intramolecular transfers
+2.7.6.-,Transferases,Transferring Phosphorus-Containing Groups,Diphosphotransferases
+2.7.7.-,Transferases,Transferring Phosphorus-Containing Groups,Nucleotidyltransferases
+2.7.8.-,Transferases,Transferring Phosphorus-Containing Groups,Transferases for other substituted phosphate groups
+2.7.9.-,Transferases,Transferring Phosphorus-Containing Groups,Phosphotransferases with paired acceptors (dikinases)
+2.7.10.-,Transferases,Transferring Phosphorus-Containing Groups,Protein-tyrosine kinases
+2.7.11.-,Transferases,Transferring Phosphorus-Containing Groups,Protein-serine/threonine kinases
+2.7.12.-,Transferases,Transferring Phosphorus-Containing Groups,Dual-specificity kinases (those acting on Ser/Thr and Tyr residues)
+2.7.13.-,Transferases,Transferring Phosphorus-Containing Groups,Protein-histidine kinases
+2.7.99.-,Transferases,Transferring Phosphorus-Containing Groups,Other protein kinases
+2.8.1.-,Transferases,Transferring Sulfur-Containing Groups,Sulfurtransferases
+2.8.2.-,Transferases,Transferring Sulfur-Containing Groups,Sulfotransferases
+2.8.3.-,Transferases,Transferring Sulfur-Containing Groups,CoA-transferases
+2.8.4.-,Transferases,Transferring Sulfur-Containing Groups,Transferring alkylthio groups
+2.9.1.-,Transferases,Transferring Selenium-Containing Groups,Selenotransferases
+2.10.1.-,Transferases,Transferring molybdenum- or tungsten-containing groups,Molybdenumtransferases or tungstentransferases with sulfide groups as acceptors
+3.1.1.-,Hydrolases,Acting on Ester Bonds,Carboxylic Ester Hydrolases
+3.1.2.-,Hydrolases,Acting on Ester Bonds,Thioester Hydrolases
+3.1.3.-,Hydrolases,Acting on Ester Bonds,Phosphoric Monoester Hydrolases
+3.1.4.-,Hydrolases,Acting on Ester Bonds,Phosphoric Diester Hydrolases
+3.1.5.-,Hydrolases,Acting on Ester Bonds,Triphosphoric Monoester Hydrolases
+3.1.6.-,Hydrolases,Acting on Ester Bonds,Sulfuric Ester Hydrolases
+3.1.7.-,Hydrolases,Acting on Ester Bonds,Diphosphoric Monoester Hydrolases
+3.1.8.-,Hydrolases,Acting on Ester Bonds,Phosphoric Triester Hydrolases
+3.1.11.-,Hydrolases,Acting on Ester Bonds,Exodeoxyribonucleases Producing 5'-Phosphomonoesters
+3.1.13.-,Hydrolases,Acting on Ester Bonds,Exoribonucleases Producing 5'-Phosphomonoesters
+3.1.14.-,Hydrolases,Acting on Ester Bonds,Exoribonucleases Producing 3'-Phosphomonoesters
+3.1.15.-,Hydrolases,Acting on Ester Bonds,Exonucleases Active with either Ribo- or Deoxyribonucleic Acids and Producing 5'-Phosphomonoesters
+3.1.16.-,Hydrolases,Acting on Ester Bonds,Exonucleases Active with either Ribo- or Deoxyribonucleic Acids and Producing 3'-Phosphomonoesters
+3.1.21.-,Hydrolases,Acting on Ester Bonds,Endodeoxyribonucleases Producing 5'-Phosphomonoesters
+3.1.22.-,Hydrolases,Acting on Ester Bonds,Endodeoxyribonucleases Producing 3'-Phosphomonoesters
+3.1.25.-,Hydrolases,Acting on Ester Bonds,Site-Specific Endodeoxyribonucleases Specific for Altered Bases
+3.1.26.-,Hydrolases,Acting on Ester Bonds,Endoribonucleases Producing 5'-Phosphomonoesters
+3.1.27.-,Hydrolases,Acting on Ester Bonds,Endoribonucleases Producing 3'-Phosphomonoesters
+3.1.30.-,Hydrolases,Acting on Ester Bonds,Endoribonucleases Active with either Ribo- or Deoxyribonucleic Acids and Producing 5'-Phosphomonoesters
+3.1.31.-,Hydrolases,Acting on Ester Bonds,Endoribonucleases Active with either Ribo- or Deoxyribonucleic Acids and Producing 3'-Phosphomonoesters
+3.2.1.-,Hydrolases,Glycosylases,Glycosidases
+3.2.2.-,Hydrolases,Glycosylases,Hydrolysing N-Glycosyl Compounds
+3.2.3.-,Hydrolases,Glycosylases,Hydrolysing S-Glycosyl Compounds
+3.3.1.-,Hydrolases,Acting on Ether Bonds,Thioether and trialkylsulfonium hydrolases
+3.3.2.-,Hydrolases,Acting on Ether Bonds,Ether Hydrolases
+3.4.11.-,Hydrolases,Peptidase,Aminopeptidases
+3.4.13.-,Hydrolases,Peptidase,Dipeptidases
+3.4.14.-,Hydrolases,Peptidase,Dipeptidyl peptidases and tripeptidyl peptidases
+3.4.15.-,Hydrolases,Peptidase,Peptidyl dipeptidases
+3.4.16.-,Hydrolases,Peptidase,Serine type carboxypeptidases
+3.4.17.-,Hydrolases,Peptidase,Metallocarboxypeptidases
+3.4.18.-,Hydrolases,Peptidase,Cysteine type carboxypeptidases
+3.4.19.-,Hydrolases,Peptidase,Omega peptidases
+3.4.21.-,Hydrolases,Peptidase,Serine proteases
+3.4.22.-,Hydrolases,Peptidase,Cysteine proteases
+3.4.23.-,Hydrolases,Peptidase,Aspartic endopeptidases
+3.4.24.-,Hydrolases,Peptidase,Metallopeptidases
+3.4.25.-,Hydrolases,Peptidase,Threonine endopeptidases
+3.4.99.-,Hydrolases,Peptidase,Endopeptidases of unknown catalytic mechanism
+3.5.1.-,Hydrolases,Acting on carbon-nitrogen bonds; Other than peptide bonds,linear amides
+3.5.2.-,Hydrolases,Acting on carbon-nitrogen bonds; Other than peptide bonds,cyclic amides
+3.5.3.-,Hydrolases,Acting on carbon-nitrogen bonds; Other than peptide bonds,linear amidines
+3.5.4.-,Hydrolases,Acting on carbon-nitrogen bonds; Other than peptide bonds,cyclic amidines
+3.5.5.-,Hydrolases,Acting on carbon-nitrogen bonds; Other than peptide bonds,nitriles
+3.5.99.-,Hydrolases,Acting on carbon-nitrogen bonds; Other than peptide bonds,other compounds
+3.6.1.-,Hydrolases,Acting on acid anhydrides,In Phosphorus-Containing Anhydrides
+3.6.2.-,Hydrolases,Acting on acid anhydrides,In Sulfonyl-Containing Anhydrides
+3.6.3.-,Hydrolases,Acting on acid anhydrides,Acting on acid anhydrides; catalysing transmembrane movement of substances
+3.6.4.-,Hydrolases,Acting on acid anhydrides,Acting on ATP; involved in cellular and subcellular movement
+3.6.5.-,Hydrolases,Acting on acid anhydrides,Acting on GTP; involved in cellular and subcellular movement
+3.7.1.-,Hydrolases,Acting on carbon-carbon bonds,In Ketonic Substances
+3.8.1.-,Hydrolases,Acting on halide bonds,In C-Halide Compounds
+3.11.1.-,Hydrolases,Acting on carbon-phosphorus bonds,Acting on carbon-phosphorus bonds
+4.1.1.-,Lyases,Carbon-Carbon Lyases,Carboxy-Lyases
+4.1.2.-,Lyases,Carbon-Carbon Lyases,Aldehyde-Lyases
+4.1.3.-,Lyases,Carbon-Carbon Lyases,Oxo-Acid-Lyases
+4.1.99.-,Lyases,Carbon-Carbon Lyases,Other Carbon-Carbon Lyases
+4.2.1.-,Lyases,Carbon-Oxygen Lyases,Hydro-lyases
+4.2.2.-,Lyases,Carbon-Oxygen Lyases,Acting on Polysaccharides
+4.2.3.-,Lyases,Carbon-Oxygen Lyases,Acting on phosphates
+4.2.99.-,Lyases,Carbon-Oxygen Lyases,Other Carbon-Oxygen Lyases
+4.3.1.-,Lyases,Carbon-Nitrogen Lyases,Ammonia-Lyases
+4.3.2.-,Lyases,Carbon-Nitrogen Lyases,Amidine-Lyases
+4.3.3.-,Lyases,Carbon-Nitrogen Lyases,Amine-Lyases
+4.3.99.-,Lyases,Carbon-Nitrogen Lyases,Other Carbon-Nitrogen Lyases
+4.4.1.-,Lyases,Carbon-Sulfur Lyases,Carbon-Sulfur Lyases
+4.5.1.-,Lyases,Carbon-Halide Lyases,Carbon-Halide Lyases
+4.6.1.-,Lyases,Phosphorus-Oxygen Lyases,Phosphorus-Oxygen Lyases
+4.99.1.-,Lyases,Other Lyases,Other Lyases
+5.1.1.-,Isomerases,Epimerases and racemases,Acting on Amino acids and Derivatives
+5.1.2.-,Isomerases,Epimerases and racemases,Acting on Hydroxy acids and Derivatives
+5.1.3.-,Isomerases,Epimerases and racemases,Acting on Carbohydrates and Derivatives
+5.1.99.-,Isomerases,Epimerases and racemases,Acting on Other Compounds
+5.2.1.-,Isomerases,Cis-trans-Isomerases,cis-trans-Isomerases
+5.3.1.-,Isomerases,Intramolecular Oxidoreductases,Interconverting Aldoses and Ketoses
+5.3.2.-,Isomerases,Intramolecular Oxidoreductases,Interconverting Keto- and Enol-Groups
+5.3.3.-,Isomerases,Intramolecular Oxidoreductases,Transposing C=C Bonds
+5.3.4.-,Isomerases,Intramolecular Oxidoreductases,Transposing S-S Bonds
+5.3.99.-,Isomerases,Intramolecular Oxidoreductases,Other Intramolecular Oxidoreductases
+5.4.1.-,Isomerases,Intramolecular Transferases,Transferring Acyl Groups
+5.4.2.-,Isomerases,Intramolecular Transferases,Phosphotransferases (Phosphomutases)
+5.4.3.-,Isomerases,Intramolecular Transferases,Transferring Amino Groups
+5.4.4.-,Isomerases,Intramolecular Transferases,Transferring hydroxy groups
+5.4.99.-,Isomerases,Intramolecular Transferases,Transferring Other Groups
+5.5.1.-,Isomerases,Intramolecular Lyases,Intramolecular Lyases
+5.99.1.-,Isomerases,Other Isomerases,Other Isomerases
+6.1.1.-,Ligases,Forming Carbon-Oxygen Bonds,Ligases Forming Aminoacyl-tRNA and Related Compounds (Aminoacyl tRNA synthetase)
+6.1.2.-,Ligases,Forming Carbon-Oxygen Bonds,Acid—alcohol ligases (ester synthases)
+6.2.1.-,Ligases,Forming Carbon-Sulfur Bonds,Acid-Thiol Ligases
+6.3.1.-,Ligases,Forming Carbon-Nitrogen Bonds,Acid-Ammonia (or Amine) Ligases (Amide Synthases)
+6.3.2.-,Ligases,Forming Carbon-Nitrogen Bonds,Acid-Amino-Acid Ligases (Peptide Synthases)
+6.3.3.-,Ligases,Forming Carbon-Nitrogen Bonds,Cyclo-Ligases
+6.3.4.-,Ligases,Forming Carbon-Nitrogen Bonds,Other Carbon-Nitrogen Ligases
+6.3.5.-,Ligases,Forming Carbon-Nitrogen Bonds,Carbon-Nitrogen Ligases with Glutamine as Amido-N-Donor
+6.4.1.-,Ligases,Forming Carbon-Carbon Bonds,Forming Carbon-Carbon Bonds
+6.5.1.-,Ligases,Forming Phosphoric Ester Bonds,Forming Phosphoric Ester Bonds
+6.6.1.-,Ligases,Forming Nitrogen-Metal Bonds,Forming Coordination Complexes
