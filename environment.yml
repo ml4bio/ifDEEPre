@@ -17,7 +17,7 @@ dependencies:
   - bzip2=1.0.8=h7b6447c_0
   - c-ares=1.17.1=h27cfd23_0
   - ca-certificates=2021.10.8=ha878542_0
-  - certifi=2016.9.26=py36_0
+  - certifi
   - cpuonly=2.0=0
   - cudatoolkit=10.0.130=0
   - cudnn=7.6.5=cuda10.0_0
@@ -99,7 +99,7 @@ dependencies:
     - fair-esm==0.4.0
     - fasta-reader==1.0.0
     - gff-io==0.0.2
-    - google-auth==1.35.0
+    - google-auth
     - google-auth-oauthlib==0.4.6
     - grpcio==1.42.0
     - hmmer==0.1.0
@@ -131,7 +131,7 @@ dependencies:
     - rsa==4.8
     - scikit-learn==0.24.2
     - scipy==1.4.1
-    - setuptools==39.1.0
+    - setuptools
     - sklearn==0.0
     - tensorboard==1.9.0
     - tensorflow==1.9.0
