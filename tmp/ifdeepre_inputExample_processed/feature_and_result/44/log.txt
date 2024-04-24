@@ -1,0 +1,22 @@
+The 44th sequence: MATASSNNNSAANNNTSTANTSTANPSTTNTPTPTIAQTTLINSLATTAHDCIIMHPSRKALKAALM 
+The first digit result:
+Predicted digit:
+0
+Candiate digits:
+0	1	2	3	4	5	6
+Probability:
+0.99984837	2.4469023e-06	9.4983036e-05	5.3694752e-05	2.5386447e-07	2.0202005e-07	8.0668805e-09
+The second digit result:
+Predicted digit:
+0
+Candidate digits:
+0
+Probability:
+0.0
+The third digit result:
+Predicted digit:
+0
+Candidate digits:
+0
+Probability:
+0.0
