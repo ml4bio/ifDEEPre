@@ -1,0 +1,22 @@
+The 48th sequence: MLSLLKAAIEAEATTRAANAGTTTAPPVSDPEEARRRQDLVRGMRTLAAPTKEEQAATTAAAGPPLSLRRNSCSGALPSQNKK 
+The first digit result:
+Predicted digit:
+0
+Candiate digits:
+0	1	2	3	4	5	6
+Probability:
+0.99938273	4.3035045e-05	0.0003031203	0.00025780872	7.464959e-06	5.707726e-06	1.6146207e-07
+The second digit result:
+Predicted digit:
+0
+Candidate digits:
+0
+Probability:
+0.0
+The third digit result:
+Predicted digit:
+0
+Candidate digits:
+0
+Probability:
+0.0
