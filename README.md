@@ -39,7 +39,20 @@ The online server of this package is available from this link, [ifDEEPre](https:
 Users can directly upload their protein sequences and get accurate enzyme commission number prediction results conveniently after a short time of waiting. Furthermore, the prediction results can be directly downloaded for convenient future usage.
 
 
+## 5. Citation
 
+If you found this library useful in your research, please consider citing
+```
+@article{tan2024ifdeepre,
+  title={ifDEEPre: large protein language-based deep learning enables interpretable and fast predictions of enzyme commission numbers},
+  author={Tan, Qingxiong and Xiao, Jin and Chen, Jiayang and Wang, Yixuan and Zhang, Zeliang and Zhao, Tiancheng and Li, Yu},
+  journal={Briefings in Bioinformatics},
+  volume={25},
+  number={4},
+  year={2024},
+  publisher={Oxford Academic}
+}
+```
 
 
 
